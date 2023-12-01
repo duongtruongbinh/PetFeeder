@@ -1,0 +1,847 @@
+[
+    {
+        "id": "3eca310671c379f7",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1da8150db3441bd4",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "bc72179531874d62",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#000000",
+                "baseFont": "Lucida Sans Typewriter,Lucida Console,Monaco,monospace",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#000000",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#f2baba",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#98f263",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Lucida Sans Typewriter,Lucida Console,Monaco,monospace"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "c5eddff41b767047",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "1da8150db3441bd4",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a8fea1d5840e413d",
+        "type": "ui_group",
+        "name": "Group2",
+        "tab": "1da8150db3441bd4",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bfc57827409276e6",
+        "type": "ui_tab",
+        "name": "Login",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "dd0c2d2a5072a4db",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "bfc57827409276e6",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a3932d50bc1650f6",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "8b70709a891d013d",
+        "type": "function",
+        "z": "3eca310671c379f7",
+        "name": "function 1",
+        "func": "const num = flow.get(\"num\")\nconst max = flow.get(\"max\")\nconst min = flow.get(\"min\")\nif (min>max)\n{\n    msg.ngu=min-max\n}\nconst rand = Math.random()*(max-min)+min;\nmsg.rand =rand\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 360,
+        "wires": [
+            [
+                "25b294f232eb2af3",
+                "407790373ca151ec"
+            ]
+        ]
+    },
+    {
+        "id": "04ed9e624efd10bd",
+        "type": "ui_button",
+        "z": "3eca310671c379f7",
+        "name": "",
+        "group": "c5eddff41b767047",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Đo độ gay",
+        "tooltip": "Bấm vào đi thằng gay",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-american-sign-language-interpreting",
+        "payload": "Clicked",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 270,
+        "y": 360,
+        "wires": [
+            [
+                "a9bf8fbf69cce36b",
+                "8b70709a891d013d"
+            ]
+        ]
+    },
+    {
+        "id": "a9bf8fbf69cce36b",
+        "type": "debug",
+        "z": "3eca310671c379f7",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "25b294f232eb2af3",
+        "type": "ui_text",
+        "z": "3eca310671c379f7",
+        "group": "c5eddff41b767047",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Mức độ gay của bạn",
+        "format": "{{msg.rand}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 700,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "584f6d5fd9e86ab2",
+        "type": "ui_numeric",
+        "z": "3eca310671c379f7",
+        "name": "",
+        "label": "Tuổi",
+        "tooltip": "",
+        "group": "c5eddff41b767047",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 410,
+        "y": 240,
+        "wires": [
+            [
+                "d96a2eb38dee0798"
+            ]
+        ]
+    },
+    {
+        "id": "d96a2eb38dee0798",
+        "type": "function",
+        "z": "3eca310671c379f7",
+        "name": "function 2",
+        "func": "flow.set(\"num\",msg.payload)\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8da415987ef6c287",
+        "type": "ui_slider",
+        "z": "3eca310671c379f7",
+        "name": "",
+        "label": "Tuổi",
+        "tooltip": "Kéo đi thằng ml",
+        "group": "c5eddff41b767047",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "584f6d5fd9e86ab2"
+            ]
+        ]
+    },
+    {
+        "id": "61f60f846837a094",
+        "type": "ui_numeric",
+        "z": "3eca310671c379f7",
+        "name": "",
+        "label": "Max",
+        "tooltip": "",
+        "group": "c5eddff41b767047",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 470,
+        "y": 180,
+        "wires": [
+            [
+                "33eb596585609195"
+            ]
+        ]
+    },
+    {
+        "id": "33eb596585609195",
+        "type": "function",
+        "z": "3eca310671c379f7",
+        "name": "function 3",
+        "func": "flow.set(\"max\",msg.payload)\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f4bc1f4085e2a05c",
+        "type": "ui_numeric",
+        "z": "3eca310671c379f7",
+        "name": "",
+        "label": "Min",
+        "tooltip": "",
+        "group": "c5eddff41b767047",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 450,
+        "y": 120,
+        "wires": [
+            [
+                "f4b8616a8fa2139e"
+            ]
+        ]
+    },
+    {
+        "id": "f4b8616a8fa2139e",
+        "type": "function",
+        "z": "3eca310671c379f7",
+        "name": "function 4",
+        "func": "flow.set(\"min\",msg.payload)\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "407790373ca151ec",
+        "type": "ui_text",
+        "z": "3eca310671c379f7",
+        "group": "c5eddff41b767047",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Mức độ ngu",
+        "format": "{{msg.ngu}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 690,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "f28f4ceee4af8cad",
+        "type": "inject",
+        "z": "3eca310671c379f7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 580,
+        "wires": [
+            [
+                "b661616b25f2ad0f"
+            ]
+        ]
+    },
+    {
+        "id": "b661616b25f2ad0f",
+        "type": "function",
+        "z": "3eca310671c379f7",
+        "name": "function 5",
+        "func": "const rand = Math.random()*100;\nmsg.payload=Math.round(rand)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 580,
+        "wires": [
+            [
+                "28c324baebbc8f1c",
+                "2517be462333d4d3"
+            ]
+        ]
+    },
+    {
+        "id": "28c324baebbc8f1c",
+        "type": "ui_gauge",
+        "z": "3eca310671c379f7",
+        "name": "",
+        "group": "a8fea1d5840e413d",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Tuổi",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "33",
+        "seg2": "67",
+        "diff": false,
+        "className": "",
+        "x": 710,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "2517be462333d4d3",
+        "type": "ui_chart",
+        "z": "3eca310671c379f7",
+        "name": "",
+        "group": "a8fea1d5840e413d",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 610,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "34e0898df7f34a71",
+        "type": "ui_form",
+        "z": "3eca310671c379f7",
+        "name": "",
+        "label": "",
+        "group": "dd0c2d2a5072a4db",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Username",
+                "value": "username",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Password",
+                "value": "password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "username": "",
+            "password": ""
+        },
+        "payload": "",
+        "submit": "Login",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 330,
+        "y": 680,
+        "wires": [
+            [
+                "8dca583b32391a7b"
+            ]
+        ]
+    },
+    {
+        "id": "8dca583b32391a7b",
+        "type": "function",
+        "z": "3eca310671c379f7",
+        "name": "function 6",
+        "func": "if ((msg.payload.username == 'admin') && (msg.payload.password=='admin'))\n{\n    msg.payload={\n        'tab':'Home'\n    }\n}\nelse \nmsg.payload = 'Nhập sai nữa tao tán vô cái mỏ mày'\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 780,
+        "wires": [
+            [
+                "c915c4a604f111a1",
+                "157bb35e8314d4fb",
+                "75f00acbaaba9a06"
+            ]
+        ]
+    },
+    {
+        "id": "c915c4a604f111a1",
+        "type": "ui_audio",
+        "z": "3eca310671c379f7",
+        "name": "",
+        "group": "dd0c2d2a5072a4db",
+        "voice": "Microsoft HoaiMy Online (Natural) - Vietnamese (Vietnam)",
+        "always": "",
+        "x": 620,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "157bb35e8314d4fb",
+        "type": "ui_ui_control",
+        "z": "3eca310671c379f7",
+        "name": "",
+        "events": "all",
+        "x": 640,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "75f00acbaaba9a06",
+        "type": "ui_toast",
+        "z": "3eca310671c379f7",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 670,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "cc6b732c7c3a299e",
+        "type": "inject",
+        "z": "3eca310671c379f7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 740,
+        "wires": [
+            [
+                "82a4c1dca173346d"
+            ]
+        ]
+    },
+    {
+        "id": "d8bdb4e1a5eec211",
+        "type": "ui_ui_control",
+        "z": "3eca310671c379f7",
+        "name": "",
+        "events": "all",
+        "x": 320,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "82a4c1dca173346d",
+        "type": "function",
+        "z": "3eca310671c379f7",
+        "name": "function 7",
+        "func": "msg.payload = {\n    'tab':'login'\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 820,
+        "wires": [
+            [
+                "d8bdb4e1a5eec211"
+            ]
+        ]
+    },
+    {
+        "id": "6feca323f6bef9cc",
+        "type": "mqtt in",
+        "z": "3eca310671c379f7",
+        "name": "",
+        "topic": "21127229/temperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "a3932d50bc1650f6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 1000,
+        "wires": [
+            [
+                "0b95d47a7917cbf8"
+            ]
+        ]
+    },
+    {
+        "id": "0b95d47a7917cbf8",
+        "type": "debug",
+        "z": "3eca310671c379f7",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "850ba6d02bf90e03",
+        "type": "ui_switch",
+        "z": "3eca310671c379f7",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "dd0c2d2a5072a4db",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 150,
+        "y": 1120,
+        "wires": [
+            [
+                "a05cecfc8a6af0fc"
+            ]
+        ]
+    },
+    {
+        "id": "a05cecfc8a6af0fc",
+        "type": "mqtt out",
+        "z": "3eca310671c379f7",
+        "name": "",
+        "topic": "21127229/led",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a3932d50bc1650f6",
+        "x": 480,
+        "y": 1120,
+        "wires": []
+    }
+]
