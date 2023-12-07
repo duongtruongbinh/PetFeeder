@@ -206,7 +206,7 @@
         "type": "ui_tab",
         "name": "Login",
         "icon": "dashboard",
-        "order": 1,
+        "order": 2,
         "disabled": false,
         "hidden": true
     },
@@ -215,9 +215,29 @@
         "type": "ui_tab",
         "name": "Home",
         "icon": "dashboard",
-        "order": 2,
+        "order": 3,
         "disabled": false,
         "hidden": true
+    },
+    {
+        "id": "aa6de7dd52d2548b",
+        "type": "ui_tab",
+        "name": "Statistics",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "2d66c14763805337",
+        "type": "ui_group",
+        "name": "1-day Statistics",
+        "tab": "aa6de7dd52d2548b",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "a607bff7666abe19",
@@ -256,8 +276,8 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 330,
-        "y": 920,
+        "x": 90,
+        "y": 1100,
         "wires": [
             [
                 "8f9998ca84483d53"
@@ -268,60 +288,37 @@
         "id": "8f9998ca84483d53",
         "type": "function",
         "z": "1c38bb45ab2e35d1",
-        "name": "function 1",
-        "func": "if (msg.payload.username === \"admin\" && msg.payload.password === \"admin\"){\n    msg.payload = {\n        \"tab\": \"Home\",\n        \"tabs\": {\n            \"show\": [\"Home\"]\n        }\n    }\n}\nreturn msg;",
+        "name": "Login",
+        "func": "if (msg.payload.username === \"admin\" && msg.payload.password === \"admin\"){\n    msg.payload = {\n        \"tabs\": {\n            \"show\": [\"Home\", \"Statistics\"],\n            \"hide\": [\"Login\"]\n        },\n        \"tab\": \"Home\",\n        \"success\": \"Login completed\"\n    }\n}\nelse {\n    msg.payload = {\n        \"failure\": \"Wrong account/password\"\n    }\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 520,
-        "y": 920,
+        "x": 310,
+        "y": 1100,
         "wires": [
             [
-                "36c988b608a7ecff"
+                "d57b6c6c90b48677",
+                "9c09e02cc734503d"
             ]
-        ]
-    },
-    {
-        "id": "36c988b608a7ecff",
-        "type": "ui_ui_control",
-        "z": "1c38bb45ab2e35d1",
-        "name": "",
-        "events": "all",
-        "x": 680,
-        "y": 920,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d57b6c6c90b48677",
-        "type": "ui_ui_control",
-        "z": "1c38bb45ab2e35d1",
-        "name": "",
-        "events": "all",
-        "x": 660,
-        "y": 720,
-        "wires": [
-            []
         ]
     },
     {
         "id": "82d606a579c159fe",
         "type": "function",
         "z": "1c38bb45ab2e35d1",
-        "name": "function 2",
-        "func": "flow.set(\"amount\", 100)\nflow.set(\"eaten_amount\", 0)\n\nmsg.payload = {\n    \"tab\": \"Login\"\n}\nreturn msg;",
+        "name": "Initialization",
+        "func": "flow.set(\"amount\", 100)\nflow.set(\"eaten_amount\", 0)\nflow.set(\"container_remain\", 0)\nflow.set(\"container_remain_percentage\", 0)\n\n// Flags for ifttt notification\nflow.set(\"noti_50\", true)\nflow.set(\"noti_20\", true)\nflow.set(\"noti_0\", true)\n\nmsg.payload = {\n    \"tabs\": {\n        \"show\": [\"Login\"]\n    },\n    \"tab\": \"Login\"\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 500,
-        "y": 720,
+        "x": 290,
+        "y": 980,
         "wires": [
             [
                 "d57b6c6c90b48677"
@@ -345,8 +342,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 330,
-        "y": 720,
+        "x": 110,
+        "y": 980,
         "wires": [
             [
                 "82d606a579c159fe"
@@ -378,7 +375,7 @@
         "diff": false,
         "className": "",
         "x": 640,
-        "y": 160,
+        "y": 280,
         "wires": []
     },
     {
@@ -386,7 +383,7 @@
         "type": "function",
         "z": "1c38bb45ab2e35d1",
         "name": "Get and calculate container",
-        "func": "const num = parseFloat(msg.payload.toFixed(2))\nconst percentage = parseFloat((num / 5000 * 100).toFixed(2))\n\nmsg.payload = {\n    num: num,\n    percentage: percentage\n}\n\nreturn msg;",
+        "func": "// msg.payload: Loadcell's value (in gram)\nconst num = parseFloat(msg.payload.toFixed(2))\n// Fixed max weight = 5kg\nconst percentage = parseFloat((num / 5000 * 100).toFixed(2))\n\nmsg.payload = {\n    num: num,\n    percentage: percentage\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -394,12 +391,14 @@
         "finalize": "",
         "libs": [],
         "x": 360,
-        "y": 100,
+        "y": 220,
         "wires": [
             [
                 "6ff0c52bfb5caa23",
                 "cc5164423f8aadb9",
-                "d9609c0fd4c86057"
+                "d9609c0fd4c86057",
+                "d1ce92c6462e2942",
+                "2a33e09d42ad05ba"
             ]
         ]
     },
@@ -428,7 +427,7 @@
         "diff": false,
         "className": "",
         "x": 640,
-        "y": 320,
+        "y": 440,
         "wires": []
     },
     {
@@ -436,7 +435,7 @@
         "type": "function",
         "z": "1c38bb45ab2e35d1",
         "name": "Get and calculate plate",
-        "func": "const num = parseFloat(msg.payload.toFixed(2))\nconst percentage = parseFloat((num / 1000 * 100).toFixed(2))\n\nmsg.payload = {\n    num: num,\n    percentage: percentage\n}\n\nreturn msg;",
+        "func": "// msg.payload = Loadcell's value (in gram)\nconst num = parseFloat(msg.payload.toFixed(2))\n// Fixed max weight = 1kg\nconst percentage = parseFloat((num / 1000 * 100).toFixed(2))\n\nmsg.payload = {\n    num: num,\n    percentage: percentage\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -444,7 +443,7 @@
         "finalize": "",
         "libs": [],
         "x": 340,
-        "y": 260,
+        "y": 380,
         "wires": [
             [
                 "7c4d59162a01c130",
@@ -471,7 +470,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 600,
-        "y": 100,
+        "y": 220,
         "wires": []
     },
     {
@@ -492,7 +491,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 600,
-        "y": 260,
+        "y": 380,
         "wires": []
     },
     {
@@ -516,7 +515,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 110,
-        "y": 460,
+        "y": 580,
         "wires": [
             [
                 "51767dd9cb6024ce"
@@ -544,7 +543,7 @@
         "step": "100",
         "className": "",
         "x": 120,
-        "y": 400,
+        "y": 520,
         "wires": [
             [
                 "4d504605190834ba"
@@ -564,7 +563,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 400,
+        "y": 520,
         "wires": [
             []
         ]
@@ -582,7 +581,7 @@
         "finalize": "",
         "libs": [],
         "x": 280,
-        "y": 460,
+        "y": 580,
         "wires": [
             [
                 "c333457ee145288d"
@@ -602,7 +601,7 @@
         "finalize": "",
         "libs": [],
         "x": 660,
-        "y": 200,
+        "y": 320,
         "wires": [
             [
                 "a60863c544de65e6"
@@ -622,7 +621,7 @@
         "finalize": "",
         "libs": [],
         "x": 670,
-        "y": 40,
+        "y": 160,
         "wires": [
             []
         ]
@@ -643,7 +642,7 @@
         "topic": "",
         "name": "Success notification",
         "x": 780,
-        "y": 500,
+        "y": 620,
         "wires": []
     },
     {
@@ -669,7 +668,7 @@
         "repair": false,
         "outputs": 2,
         "x": 430,
-        "y": 460,
+        "y": 580,
         "wires": [
             [
                 "4e2ae08885287596"
@@ -692,7 +691,7 @@
         "finalize": "",
         "libs": [],
         "x": 580,
-        "y": 500,
+        "y": 620,
         "wires": [
             [
                 "f674c0681bada139",
@@ -716,7 +715,7 @@
         "topic": "",
         "name": "Failure notification",
         "x": 770,
-        "y": 440,
+        "y": 560,
         "wires": [
             []
         ]
@@ -734,7 +733,7 @@
         "finalize": "",
         "libs": [],
         "x": 580,
-        "y": 440,
+        "y": 560,
         "wires": [
             [
                 "0aad876dbfdcc052"
@@ -759,7 +758,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 890,
-        "y": 260,
+        "y": 380,
         "wires": []
     },
     {
@@ -776,11 +775,10 @@
         "rh": 0,
         "inputs": 0,
         "x": 120,
-        "y": 100,
+        "y": 220,
         "wires": [
             [
-                "ed7b0db0ce1b4cca",
-                "2a33e09d42ad05ba"
+                "ed7b0db0ce1b4cca"
             ]
         ]
     },
@@ -796,8 +794,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 320,
-        "y": 160,
+        "x": 400,
+        "y": 280,
         "wires": []
     },
     {
@@ -815,7 +813,7 @@
         "expiry": "",
         "broker": "989a90dfdbfa79d0",
         "x": 890,
-        "y": 560,
+        "y": 680,
         "wires": []
     },
     {
@@ -831,7 +829,7 @@
         "finalize": "",
         "libs": [],
         "x": 740,
-        "y": 560,
+        "y": 680,
         "wires": [
             [
                 "68999a68c2130bc5"
@@ -852,7 +850,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 110,
-        "y": 260,
+        "y": 380,
         "wires": [
             [
                 "4ca25683ea82e5cc",
@@ -873,7 +871,465 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 300,
-        "y": 320,
+        "y": 440,
         "wires": []
+    },
+    {
+        "id": "d57b6c6c90b48677",
+        "type": "ui_ui_control",
+        "z": "1c38bb45ab2e35d1",
+        "name": "",
+        "events": "all",
+        "x": 460,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c09e02cc734503d",
+        "type": "switch",
+        "z": "1c38bb45ab2e35d1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "hask",
+                "v": "success",
+                "vt": "str"
+            },
+            {
+                "t": "hask",
+                "v": "failure",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 450,
+        "y": 1160,
+        "wires": [
+            [
+                "8ad9dfeea3d18d2a"
+            ],
+            [
+                "86944e7a72fc45ec"
+            ]
+        ]
+    },
+    {
+        "id": "8ad9dfeea3d18d2a",
+        "type": "function",
+        "z": "1c38bb45ab2e35d1",
+        "name": "function 10",
+        "func": "msg.payload = msg.payload.success\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 1120,
+        "wires": [
+            [
+                "1f5dc912882315c4"
+            ]
+        ]
+    },
+    {
+        "id": "86944e7a72fc45ec",
+        "type": "function",
+        "z": "1c38bb45ab2e35d1",
+        "name": "function 11",
+        "func": "msg.payload = msg.payload.failure\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 1200,
+        "wires": [
+            [
+                "1f5dc912882315c4"
+            ]
+        ]
+    },
+    {
+        "id": "1f5dc912882315c4",
+        "type": "ui_toast",
+        "z": "1c38bb45ab2e35d1",
+        "position": "bottom right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 790,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "85bfae7a3086d1de",
+        "type": "inject",
+        "z": "1c38bb45ab2e35d1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 780,
+        "wires": [
+            [
+                "7f24b7982ce194bc"
+            ]
+        ]
+    },
+    {
+        "id": "7f24b7982ce194bc",
+        "type": "function",
+        "z": "1c38bb45ab2e35d1",
+        "name": "function 12",
+        "func": "msg.payload = Math.round(Math.random()*100)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 780,
+        "wires": [
+            [
+                "77d4b99a9650796b"
+            ]
+        ]
+    },
+    {
+        "id": "77d4b99a9650796b",
+        "type": "http request",
+        "z": "1c38bb45ab2e35d1",
+        "name": "Send data to Thingspeak",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.thingspeak.com/update?api_key=XRSGUUMCOGOTT89V&field1={{payload}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 490,
+        "y": 780,
+        "wires": [
+            [
+                "3e7188dfe4d69994"
+            ]
+        ]
+    },
+    {
+        "id": "3e7188dfe4d69994",
+        "type": "debug",
+        "z": "1c38bb45ab2e35d1",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "f2603d666ac3eab3",
+        "type": "inject",
+        "z": "1c38bb45ab2e35d1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 840,
+        "wires": [
+            [
+                "d889ddb3646ce564"
+            ]
+        ]
+    },
+    {
+        "id": "d889ddb3646ce564",
+        "type": "http request",
+        "z": "1c38bb45ab2e35d1",
+        "name": "Get data from Thingspeak",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.thingspeak.com/channels/2372088/fields/1.json?api_key=KYAW97ZDGX7CCNPF&days=1&timezone=Asia%2FBangkok",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 310,
+        "y": 840,
+        "wires": [
+            [
+                "71fc8f0503db5b1a"
+            ]
+        ]
+    },
+    {
+        "id": "71fc8f0503db5b1a",
+        "type": "json",
+        "z": "1c38bb45ab2e35d1",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 510,
+        "y": 840,
+        "wires": [
+            [
+                "2b33553528ade4c8"
+            ]
+        ]
+    },
+    {
+        "id": "7653450f6b2f35ca",
+        "type": "comment",
+        "z": "1c38bb45ab2e35d1",
+        "name": "",
+        "info": "Dữ liệu theo ngày, tuần, tháng phụ thuộc rất nhiều vào cái query của http request\nXem docs để tìm cách lấy dữ liệu\nhttps://www.mathworks.com/help/thingspeak/readfield.html",
+        "x": 100,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "2b33553528ade4c8",
+        "type": "function",
+        "z": "1c38bb45ab2e35d1",
+        "name": "function 13",
+        "func": "const entries = msg.payload.feeds\n\nconst data = entries.map((entry) => {\n    return parseFloat(entry.field1)\n})\n\nconst labels = entries.map((entry) => {\n    return entry.created_at.substr(11,8)\n})\n\nmsg.payload = [{\n    \"series\": [\"Amount\"],\n    \"data\": [[...data]],\n    \"labels\": [...labels]\n}]\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 840,
+        "wires": [
+            [
+                "b9428d73d03be004"
+            ]
+        ]
+    },
+    {
+        "id": "b9428d73d03be004",
+        "type": "ui_chart",
+        "z": "1c38bb45ab2e35d1",
+        "name": "",
+        "group": "2d66c14763805337",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 830,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d1ce92c6462e2942",
+        "type": "function",
+        "z": "1c38bb45ab2e35d1",
+        "name": "Check percentage for notification",
+        "func": "const old_percentage = flow.get(\"container_remain_percentage\")\n\nconst new_percentage = msg.payload.percentage\n\n// If the amount of food drops\nif(new_percentage < old_percentage){\n    if(new_percentage <= 50){\n        if(flow.get(\"noti_50\") === false){\n            msg.payload = {\n                notif: \"Your food container is below 50%\"\n            }\n            flow.set(\"noti_50\", true)\n        }\n    }\n    if (new_percentage <= 20) {\n        if(flow.get(\"noti_20\") === false){\n            msg.payload = {\n                notif: \"Your food container is below 20%\"\n            }\n            flow.set(\"noti_20\", true)\n        }\n    }\n    if (new_percentage == 0) {\n        if(flow.get(\"noti_0\") === false){\n            msg.payload = {\n                notif: \"Your food container is empty, go back and fill it!!!\"\n            }\n            flow.set(\"noti_0\", true)\n        }\n    }\n}\nelse{\n    if(new_percentage > 0){\n        if(flow.get(\"noti_0\") === true){\n            flow.set(\"noti_0\", false)\n        }\n    }\n    if(new_percentage > 20){\n        if(flow.get(\"noti_20\") === true){\n            flow.set(\"noti_20\", false)\n        }\n    }\n    if(new_percentage > 50){\n        if(flow.get(\"noti_50\") === true){\n            flow.set(\"noti_50\", false)\n        }\n    }\n}\n\nflow.set(\"container_remain_percentage\", new_percentage)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 100,
+        "wires": [
+            [
+                "3feb7889bc82308f"
+            ]
+        ]
+    },
+    {
+        "id": "3feb7889bc82308f",
+        "type": "switch",
+        "z": "1c38bb45ab2e35d1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "hask",
+                "v": "notif",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 890,
+        "y": 100,
+        "wires": [
+            [
+                "16fa34c9ea98a2b4",
+                "5bdc7c99f9de46c1"
+            ]
+        ]
+    },
+    {
+        "id": "16fa34c9ea98a2b4",
+        "type": "debug",
+        "z": "1c38bb45ab2e35d1",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "c469b3fc36d4f852",
+        "type": "http request",
+        "z": "1c38bb45ab2e35d1",
+        "name": "Send notification",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "https://maker.ifttt.com/trigger/food_container/with/key/p2uFc04S-wZa--ullRaUbLBoZWcztXBX7qcMNV5fn__",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1370,
+        "y": 100,
+        "wires": [
+            [
+                "8d348ce2b23a9576"
+            ]
+        ]
+    },
+    {
+        "id": "8d348ce2b23a9576",
+        "type": "debug",
+        "z": "1c38bb45ab2e35d1",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1560,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "5bdc7c99f9de46c1",
+        "type": "function",
+        "z": "1c38bb45ab2e35d1",
+        "name": "Parse notif into value1 for IFTTT",
+        "func": "msg.payload = {\n    \"value1\": msg.payload.notif\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 100,
+        "wires": [
+            [
+                "c469b3fc36d4f852"
+            ]
+        ]
     }
 ]
