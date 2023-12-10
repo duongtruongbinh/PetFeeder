@@ -3,7 +3,8 @@
     "description": "A Node-RED Project",
     "version": "0.0.1",
     "dependencies": {
-        "node-red-dashboard": "3.6.1"
+        "node-red-dashboard": "3.6.1",
+        "@gogovega/node-red-contrib-firebase-realtime-database": "0.5.3"
     },
     "node-red": {
         "settings": {
