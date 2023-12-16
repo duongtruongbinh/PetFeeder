@@ -1,8 +1,16 @@
 [
     {
-        "id": "1c38bb45ab2e35d1",
+        "id": "4e33cf5b03df07b7",
         "type": "tab",
         "label": "Hoang Lam",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "aeec0018a0fd818f",
+        "type": "tab",
+        "label": "Truong Binh",
         "disabled": false,
         "info": "",
         "env": []
@@ -109,11 +117,11 @@
     {
         "id": "4c5c83bbf054b470",
         "type": "ui_group",
-        "name": "Login",
-        "tab": "77c1c2640f0c5d2f",
+        "name": "Current Feeding Schedule",
+        "tab": "21050288c08ab01b",
         "order": 1,
         "disp": true,
-        "width": "6",
+        "width": "17",
         "collapse": false,
         "className": ""
     },
@@ -260,12 +268,362 @@
         "className": ""
     },
     {
-        "id": "a607bff7666abe19",
+        "id": "85358fcf49a28cef",
+        "type": "ui_tab",
+        "name": "Schedule",
+        "icon": "schedule",
+        "order": 5,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "9cfe263e84390285",
+        "type": "ui_group",
+        "name": "Schedule Feeding",
+        "tab": "85358fcf49a28cef",
+        "order": 1,
+        "disp": true,
+        "width": 24,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "885a9f12b26556e0",
+        "type": "ui_group",
+        "name": "Login",
+        "tab": "77c1c2640f0c5d2f",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "21050288c08ab01b",
+        "type": "ui_tab",
+        "name": "Current Schedule",
+        "icon": "dashboard",
+        "order": 6,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "637316e70cc0ae71",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ae2e27e210a4d6fb",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "df32f271c1b96b83",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "eea36066cebfae16",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3c5c1269ce462641",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2c3c34ef0bcf1bc5",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "620ba0aa613a6966",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c22cc5b846131315",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bebdc27ebc5fb413",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "60d1552b5cc4868e",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9f9a39b2d85a923f",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 14,
+        "width": 17,
+        "height": 1
+    },
+    {
+        "id": "0821b65f01d4f9fe",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "dcf39bca6f4c9e41",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b61a3206496dfbb1",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 20,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "001a1a2d69447df4",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 21,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "715b2db92828f81a",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 22,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4651af9084c43a58",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 23,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3b8c7b630195e91a",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 24,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0ee5cc1f4ea90732",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 25,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "afd8409276210c5b",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 26,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "48d435494858708e",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 27,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3af4b783a512e48e",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 28,
+        "width": 17,
+        "height": 1
+    },
+    {
+        "id": "bee929f779157bba",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 29,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "00d2d8f8abb5856b",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 31,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "4a04e3ff6dabfca8",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 32,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "1bd92616875ac273",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 33,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "845742811fe35527",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 34,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "0652c3c9214e4985",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 35,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "4159284a3ff9b317",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 36,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "273eda3281f98dd5",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "4c5c83bbf054b470",
+        "order": 37,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "043c178c3ce1e964",
+        "type": "ui_spacer",
+        "z": "aeec0018a0fd818f",
+        "name": "spacer",
+        "group": "9cfe263e84390285",
+        "order": 8,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "f88f581ac5998475",
         "type": "ui_form",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "label": "",
-        "group": "4c5c83bbf054b470",
+        "group": "885a9f12b26556e0",
         "order": 4,
         "width": 0,
         "height": 0,
@@ -300,15 +658,15 @@
         "y": 1340,
         "wires": [
             [
-                "70bbb362f7ce005c",
-                "de22f006a567e27c"
+                "8280567f9832043e",
+                "517e791c12f1fc59"
             ]
         ]
     },
     {
-        "id": "82d606a579c159fe",
+        "id": "8169b665b118a2de",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Initialization",
         "func": "flow.set(\"amount\", 100)\nflow.set(\"plate_remain\", 0)\nflow.set(\"container_remain_percentage\", 0)\n\n// Flags for ifttt notification\nflow.set(\"noti_50\", true)\nflow.set(\"noti_20\", true)\nflow.set(\"noti_0\", true)\n\nmsg.payload = {\n    \"tabs\": {\n        \"show\": [\"Login\", \"Register\"]\n    },\n    \"tab\": \"Login\"\n}\nreturn msg;",
         "outputs": 1,
@@ -321,14 +679,14 @@
         "y": 1220,
         "wires": [
             [
-                "d57b6c6c90b48677"
+                "0276ae555c7816ef"
             ]
         ]
     },
     {
-        "id": "b3c14b6df385da99",
+        "id": "8395a0e079c6dac7",
         "type": "inject",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "props": [
             {
@@ -346,14 +704,14 @@
         "y": 1220,
         "wires": [
             [
-                "82d606a579c159fe"
+                "8169b665b118a2de"
             ]
         ]
     },
     {
-        "id": "cc5164423f8aadb9",
+        "id": "d22d0bea717884de",
         "type": "ui_gauge",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "group": "0aaa3500562561ea",
         "order": 1,
@@ -379,9 +737,9 @@
         "wires": []
     },
     {
-        "id": "ed7b0db0ce1b4cca",
+        "id": "dcd52f9e1bef9923",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Get and calculate container",
         "func": "// msg.payload: Loadcell's value (in gram)\nconst num = parseFloat(msg.payload.toFixed(2))\n// Fixed max weight = 5kg\nconst percentage = parseFloat((num / 5000 * 100).toFixed(2))\n\nmsg.payload = {\n    num: num,\n    percentage: percentage\n}\n\nreturn msg;",
         "outputs": 1,
@@ -394,17 +752,17 @@
         "y": 160,
         "wires": [
             [
-                "6ff0c52bfb5caa23",
-                "cc5164423f8aadb9",
-                "d1ce92c6462e2942",
-                "e2d9bf1107248d25"
+                "c5ff3f525649c12a",
+                "d22d0bea717884de",
+                "7687c49503fada7b",
+                "81c8e9c1461f85b5"
             ]
         ]
     },
     {
-        "id": "7c4d59162a01c130",
+        "id": "495c9f5fdc23ea97",
         "type": "ui_gauge",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "group": "2f7ae1d9dbb40962",
         "order": 1,
@@ -430,9 +788,9 @@
         "wires": []
     },
     {
-        "id": "4ca25683ea82e5cc",
+        "id": "d22e4e06348ea9eb",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Get and calculate plate",
         "func": "// msg.payload = Loadcell's value (in gram)\nconst num = parseFloat(msg.payload.toFixed(2))\n// Fixed max weight = 1kg\nconst percentage = parseFloat((num / 1000 * 100).toFixed(2))\n\nmsg.payload = {\n    num: num,\n    percentage: percentage\n}\n\nreturn msg;",
         "outputs": 1,
@@ -445,17 +803,17 @@
         "y": 380,
         "wires": [
             [
-                "7c4d59162a01c130",
-                "68f10b1c9fb52097",
-                "49d53ceebd9ca4c1",
-                "ab9630d548df2c2c"
+                "495c9f5fdc23ea97",
+                "7e221b30495e0e9a",
+                "699a1a8eb52fc03c",
+                "ee4eb3ce66309b54"
             ]
         ]
     },
     {
-        "id": "6ff0c52bfb5caa23",
+        "id": "c5ff3f525649c12a",
         "type": "ui_text",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "group": "0aaa3500562561ea",
         "order": 2,
         "width": 0,
@@ -474,9 +832,9 @@
         "wires": []
     },
     {
-        "id": "68f10b1c9fb52097",
+        "id": "7e221b30495e0e9a",
         "type": "ui_text",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "group": "2f7ae1d9dbb40962",
         "order": 2,
         "width": 0,
@@ -495,9 +853,9 @@
         "wires": []
     },
     {
-        "id": "fa64a6f63d12ca7c",
+        "id": "6e13e38dc43c982c",
         "type": "ui_button",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "group": "df7f1b0707f0384d",
         "order": 2,
@@ -518,14 +876,14 @@
         "y": 760,
         "wires": [
             [
-                "51767dd9cb6024ce"
+                "b0a9b67963bd14e5"
             ]
         ]
     },
     {
-        "id": "afc7c333ea471d9e",
+        "id": "c98f399bb17e8f02",
         "type": "ui_numeric",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "label": "Food amount:",
         "tooltip": "",
@@ -546,14 +904,14 @@
         "y": 700,
         "wires": [
             [
-                "4d504605190834ba"
+                "b2569f4701ca23b2"
             ]
         ]
     },
     {
-        "id": "4d504605190834ba",
+        "id": "b2569f4701ca23b2",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "function 5",
         "func": "flow.set(\"amount\", msg.payload)\nreturn msg;",
         "outputs": 1,
@@ -569,9 +927,9 @@
         ]
     },
     {
-        "id": "51767dd9cb6024ce",
+        "id": "b0a9b67963bd14e5",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "function 6",
         "func": "const container_remain = flow.get(\"container_remain\")\nconst plate_remain = flow.get(\"plate_remain\")\nconst amount_to_feed = flow.get(\"amount\")\n\nif(container_remain < amount_to_feed){\n    msg.payload = {\n        failure: \"Your food container doesn't have enough food!\"\n    }\n}\nelse if(1000 - plate_remain < amount_to_feed){\n    msg.payload = {\n        failure: \"Your plate can't hold that much food!\"\n    }\n}\nelse{\n    msg.payload = {\n        success: \"Preparing to feed your pet!\"\n    }\n}\nreturn msg;",
         "outputs": 1,
@@ -584,14 +942,14 @@
         "y": 760,
         "wires": [
             [
-                "c333457ee145288d"
+                "d913b739e05a0f01"
             ]
         ]
     },
     {
-        "id": "f674c0681bada139",
+        "id": "d9a11770263a5b8f",
         "type": "ui_toast",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "position": "bottom right",
         "displayTime": "3",
         "highlight": "",
@@ -608,9 +966,9 @@
         "wires": []
     },
     {
-        "id": "c333457ee145288d",
+        "id": "d913b739e05a0f01",
         "type": "switch",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -633,17 +991,17 @@
         "y": 760,
         "wires": [
             [
-                "4e2ae08885287596"
+                "d90b67f3a78daa43"
             ],
             [
-                "027b975b1eafa728"
+                "aea7fc9cd9582cc2"
             ]
         ]
     },
     {
-        "id": "027b975b1eafa728",
+        "id": "aea7fc9cd9582cc2",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "function 7",
         "func": "const message = msg.payload.success\nmsg.payload = message\n\nreturn msg;",
         "outputs": 1,
@@ -656,15 +1014,15 @@
         "y": 800,
         "wires": [
             [
-                "f674c0681bada139",
-                "749dd1262cb77c5d"
+                "d9a11770263a5b8f",
+                "64aae4a760f7434c"
             ]
         ]
     },
     {
-        "id": "0aad876dbfdcc052",
+        "id": "2d7190b6b4495016",
         "type": "ui_toast",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "position": "dialog",
         "displayTime": "3",
         "highlight": "",
@@ -683,9 +1041,9 @@
         ]
     },
     {
-        "id": "4e2ae08885287596",
+        "id": "d90b67f3a78daa43",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "function 8",
         "func": "const message = msg.payload.failure\nmsg.payload = message\n\nreturn msg;",
         "outputs": 1,
@@ -698,14 +1056,14 @@
         "y": 740,
         "wires": [
             [
-                "0aad876dbfdcc052"
+                "2d7190b6b4495016"
             ]
         ]
     },
     {
-        "id": "a60863c544de65e6",
+        "id": "7b29ab85e7fb169b",
         "type": "ui_text",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "group": "2f7ae1d9dbb40962",
         "order": 3,
         "width": 0,
@@ -724,9 +1082,9 @@
         "wires": []
     },
     {
-        "id": "afd0d739dc8d04e1",
+        "id": "5bfc67003b294122",
         "type": "mqtt in",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "topic": "/scale/container",
         "qos": "2",
@@ -740,15 +1098,15 @@
         "y": 160,
         "wires": [
             [
-                "ed7b0db0ce1b4cca",
-                "2a33e09d42ad05ba"
+                "dcd52f9e1bef9923",
+                "8ea0fb3c9a9b5dea"
             ]
         ]
     },
     {
-        "id": "2a33e09d42ad05ba",
+        "id": "8ea0fb3c9a9b5dea",
         "type": "debug",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "debug 1",
         "active": true,
         "tosidebar": true,
@@ -762,9 +1120,9 @@
         "wires": []
     },
     {
-        "id": "68999a68c2130bc5",
+        "id": "95ca86d510117746",
         "type": "mqtt out",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "topic": "/servo",
         "qos": "2",
@@ -780,9 +1138,9 @@
         "wires": []
     },
     {
-        "id": "749dd1262cb77c5d",
+        "id": "64aae4a760f7434c",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "function 9",
         "func": "msg.payload = flow.get(\"amount\")\n\nreturn msg;",
         "outputs": 1,
@@ -795,14 +1153,14 @@
         "y": 860,
         "wires": [
             [
-                "68999a68c2130bc5"
+                "95ca86d510117746"
             ]
         ]
     },
     {
-        "id": "aab6dd993029df4b",
+        "id": "f4085065019e016e",
         "type": "mqtt in",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "topic": "/scale/plate",
         "qos": "2",
@@ -816,15 +1174,15 @@
         "y": 380,
         "wires": [
             [
-                "4ca25683ea82e5cc",
-                "e6daa9bc33ba25d7"
+                "d22e4e06348ea9eb",
+                "237adfda58901736"
             ]
         ]
     },
     {
-        "id": "e6daa9bc33ba25d7",
+        "id": "237adfda58901736",
         "type": "debug",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "debug 2",
         "active": true,
         "tosidebar": true,
@@ -838,21 +1196,21 @@
         "wires": []
     },
     {
-        "id": "d57b6c6c90b48677",
+        "id": "0276ae555c7816ef",
         "type": "ui_ui_control",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "events": "all",
-        "x": 1080,
+        "x": 1060,
         "y": 1220,
         "wires": [
             []
         ]
     },
     {
-        "id": "9c09e02cc734503d",
+        "id": "48a3509801002536",
         "type": "switch",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -875,18 +1233,18 @@
         "y": 1400,
         "wires": [
             [
-                "8ad9dfeea3d18d2a",
-                "0a04e5f5b7b5bcb7"
+                "edb804e870cda75d",
+                "a8d2c71182990e26"
             ],
             [
-                "86944e7a72fc45ec"
+                "82157cbfb0f35f35"
             ]
         ]
     },
     {
-        "id": "8ad9dfeea3d18d2a",
+        "id": "edb804e870cda75d",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Login success",
         "func": "msg.payload = msg.payload.success\n\nreturn msg;",
         "outputs": 1,
@@ -899,14 +1257,14 @@
         "y": 1360,
         "wires": [
             [
-                "1f5dc912882315c4"
+                "769f2fa6da097d7a"
             ]
         ]
     },
     {
-        "id": "86944e7a72fc45ec",
+        "id": "82157cbfb0f35f35",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Login failure",
         "func": "msg.payload = msg.payload.failure\nreturn msg;",
         "outputs": 1,
@@ -919,14 +1277,14 @@
         "y": 1440,
         "wires": [
             [
-                "1f5dc912882315c4"
+                "769f2fa6da097d7a"
             ]
         ]
     },
     {
-        "id": "1f5dc912882315c4",
+        "id": "769f2fa6da097d7a",
         "type": "ui_toast",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "position": "bottom right",
         "displayTime": "3",
         "highlight": "",
@@ -943,9 +1301,9 @@
         "wires": []
     },
     {
-        "id": "85bfae7a3086d1de",
+        "id": "717b41429cf5cb6e",
         "type": "inject",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "props": [
             {
@@ -967,14 +1325,14 @@
         "y": 960,
         "wires": [
             [
-                "7f24b7982ce194bc"
+                "d28c6b7671faf408"
             ]
         ]
     },
     {
-        "id": "7f24b7982ce194bc",
+        "id": "d28c6b7671faf408",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "function 12",
         "func": "msg.payload = Math.round(Math.random()*100)\nreturn msg;",
         "outputs": 1,
@@ -987,14 +1345,14 @@
         "y": 960,
         "wires": [
             [
-                "77d4b99a9650796b"
+                "81613fc758af82ec"
             ]
         ]
     },
     {
-        "id": "77d4b99a9650796b",
+        "id": "81613fc758af82ec",
         "type": "http request",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Send data to Thingspeak",
         "method": "GET",
         "ret": "txt",
@@ -1011,14 +1369,14 @@
         "y": 960,
         "wires": [
             [
-                "3e7188dfe4d69994"
+                "d02859b807e211ac"
             ]
         ]
     },
     {
-        "id": "3e7188dfe4d69994",
+        "id": "d02859b807e211ac",
         "type": "debug",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "debug 3",
         "active": true,
         "tosidebar": true,
@@ -1033,9 +1391,9 @@
         "wires": []
     },
     {
-        "id": "f2603d666ac3eab3",
+        "id": "e711454291b72ee1",
         "type": "inject",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "props": [
             {
@@ -1057,14 +1415,14 @@
         "y": 1020,
         "wires": [
             [
-                "d889ddb3646ce564"
+                "fd3b237d3da5d8bc"
             ]
         ]
     },
     {
-        "id": "d889ddb3646ce564",
+        "id": "fd3b237d3da5d8bc",
         "type": "http request",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Get data from Thingspeak",
         "method": "GET",
         "ret": "txt",
@@ -1081,14 +1439,14 @@
         "y": 1020,
         "wires": [
             [
-                "71fc8f0503db5b1a"
+                "f38e21b04b9d91d1"
             ]
         ]
     },
     {
-        "id": "71fc8f0503db5b1a",
+        "id": "f38e21b04b9d91d1",
         "type": "json",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "property": "payload",
         "action": "",
@@ -1097,15 +1455,15 @@
         "y": 1020,
         "wires": [
             [
-                "2b33553528ade4c8",
-                "954d7826e10e599f"
+                "38cd8b1ea7fd2ad6",
+                "c190d8948465e7ef"
             ]
         ]
     },
     {
-        "id": "7653450f6b2f35ca",
+        "id": "6671977241289c68",
         "type": "comment",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "info": "Dữ liệu theo ngày, tuần, tháng phụ thuộc rất nhiều vào cái query của http request\nXem docs để tìm cách lấy dữ liệu\nhttps://www.mathworks.com/help/thingspeak/readfield.html",
         "x": 100,
@@ -1113,9 +1471,9 @@
         "wires": []
     },
     {
-        "id": "2b33553528ade4c8",
+        "id": "38cd8b1ea7fd2ad6",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "function 13",
         "func": "const entries = msg.payload.feeds\n\nconst data = entries.map((entry) => {\n    return parseFloat(entry.field1)\n})\n\nconst labels = entries.map((entry) => {\n    return entry.created_at.substr(11,8)\n})\n\nmsg.payload = [{\n    \"series\": [\"Amount\"],\n    \"data\": [[...data]],\n    \"labels\": [...labels]\n}]\n\nreturn msg;",
         "outputs": 1,
@@ -1128,14 +1486,14 @@
         "y": 1020,
         "wires": [
             [
-                "b9428d73d03be004"
+                "3325a89e7c6f0bcc"
             ]
         ]
     },
     {
-        "id": "b9428d73d03be004",
+        "id": "3325a89e7c6f0bcc",
         "type": "ui_chart",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "group": "36a7cc5a3406a57d",
         "order": 2,
@@ -1177,9 +1535,9 @@
         ]
     },
     {
-        "id": "d1ce92c6462e2942",
+        "id": "7687c49503fada7b",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Check percentage for notification",
         "func": "const old_percentage = flow.get(\"container_remain_percentage\")\n\nconst new_percentage = msg.payload.percentage\n\n// If the amount of food drops\nif(new_percentage < old_percentage){\n    if(new_percentage <= 50){\n        if(flow.get(\"noti_50\") === false){\n            msg.payload = {\n                notif: \"Your food container is below 50%\"\n            }\n            flow.set(\"noti_50\", true)\n        }\n    }\n    if (new_percentage <= 20) {\n        if(flow.get(\"noti_20\") === false){\n            msg.payload = {\n                notif: \"Your food container is below 20%\"\n            }\n            flow.set(\"noti_20\", true)\n        }\n    }\n    if (new_percentage == 0) {\n        if(flow.get(\"noti_0\") === false){\n            msg.payload = {\n                notif: \"Your food container is empty, go back and fill it!!!\"\n            }\n            flow.set(\"noti_0\", true)\n        }\n    }\n}\nelse{\n    if(new_percentage > 0){\n        if(flow.get(\"noti_0\") === true){\n            flow.set(\"noti_0\", false)\n        }\n    }\n    if(new_percentage > 20){\n        if(flow.get(\"noti_20\") === true){\n            flow.set(\"noti_20\", false)\n        }\n    }\n    if(new_percentage > 50){\n        if(flow.get(\"noti_50\") === true){\n            flow.set(\"noti_50\", false)\n        }\n    }\n}\n\nflow.set(\"container_remain_percentage\", new_percentage)\n\nreturn msg;",
         "outputs": 1,
@@ -1192,14 +1550,14 @@
         "y": 40,
         "wires": [
             [
-                "3feb7889bc82308f"
+                "6bbda94cbc0da7c8"
             ]
         ]
     },
     {
-        "id": "3feb7889bc82308f",
+        "id": "6bbda94cbc0da7c8",
         "type": "switch",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -1217,15 +1575,15 @@
         "y": 40,
         "wires": [
             [
-                "16fa34c9ea98a2b4",
-                "5bdc7c99f9de46c1"
+                "a6b4eacad1f3eccc",
+                "884f8794932efe34"
             ]
         ]
     },
     {
-        "id": "16fa34c9ea98a2b4",
+        "id": "a6b4eacad1f3eccc",
         "type": "debug",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "debug 4",
         "active": true,
         "tosidebar": true,
@@ -1239,9 +1597,9 @@
         "wires": []
     },
     {
-        "id": "c469b3fc36d4f852",
+        "id": "0c83e3fe65bcf9b4",
         "type": "http request",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Send notification",
         "method": "POST",
         "ret": "txt",
@@ -1258,14 +1616,14 @@
         "y": 40,
         "wires": [
             [
-                "8d348ce2b23a9576"
+                "a51573641188c93a"
             ]
         ]
     },
     {
-        "id": "8d348ce2b23a9576",
+        "id": "a51573641188c93a",
         "type": "debug",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "debug 6",
         "active": true,
         "tosidebar": true,
@@ -1279,9 +1637,9 @@
         "wires": []
     },
     {
-        "id": "5bdc7c99f9de46c1",
+        "id": "884f8794932efe34",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Parse notif into value1 for IFTTT",
         "func": "msg.payload = {\n    \"value1\": msg.payload.notif\n}\nreturn msg;",
         "outputs": 1,
@@ -1294,14 +1652,14 @@
         "y": 40,
         "wires": [
             [
-                "c469b3fc36d4f852"
+                "0c83e3fe65bcf9b4"
             ]
         ]
     },
     {
-        "id": "314dbea53b82851f",
+        "id": "38d1fcab04597717",
         "type": "inject",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "props": [
             {
@@ -1323,14 +1681,14 @@
         "y": 900,
         "wires": [
             [
-                "22ae7ee2e0ec33b4"
+                "0e46fcf781dbe7bc"
             ]
         ]
     },
     {
-        "id": "22ae7ee2e0ec33b4",
+        "id": "0e46fcf781dbe7bc",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "function 14",
         "func": "msg.payload = {\n    \"test1\": \"abc\",\n    \"test2\": 123,\n    \"test3\": [1, 2, 3]\n}\nreturn msg;",
         "outputs": 1,
@@ -1343,14 +1701,14 @@
         "y": 900,
         "wires": [
             [
-                "c3f2695b59c44725"
+                "037c6fb42945bd3a"
             ]
         ]
     },
     {
-        "id": "c3f2695b59c44725",
+        "id": "037c6fb42945bd3a",
         "type": "mqtt out",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "topic": "/test/meo",
         "qos": "2",
@@ -1366,9 +1724,9 @@
         "wires": []
     },
     {
-        "id": "e2d9bf1107248d25",
+        "id": "81c8e9c1461f85b5",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Prepare data to push to Thingspeak",
         "func": "msg.payload = msg.payload.percentage\nmsg.topic = \"field2\"\nreturn msg;",
         "outputs": 1,
@@ -1381,14 +1739,14 @@
         "y": 220,
         "wires": [
             [
-                "959bb85625c29ee4"
+                "c21c625339ddd774"
             ]
         ]
     },
     {
-        "id": "172020e9151b7b95",
+        "id": "36f3138f904c8071",
         "type": "http request",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Get data from Thingspeak",
         "method": "GET",
         "ret": "txt",
@@ -1405,14 +1763,14 @@
         "y": 280,
         "wires": [
             [
-                "f330a55508151194"
+                "ec03ddc07cf120f5"
             ]
         ]
     },
     {
-        "id": "f330a55508151194",
+        "id": "ec03ddc07cf120f5",
         "type": "json",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "property": "payload",
         "action": "",
@@ -1421,17 +1779,17 @@
         "y": 280,
         "wires": [
             [
-                "30ba7b622d2aa610",
-                "ec7563823faf3626",
-                "9f25383364393433",
-                "98860592e09ace01"
+                "bb9498e45dbe4985",
+                "1a7316d30b5aec39",
+                "3c645cb9011540a0",
+                "89b2e8ecbed2d71a"
             ]
         ]
     },
     {
-        "id": "ec7563823faf3626",
+        "id": "1a7316d30b5aec39",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Parse data",
         "func": "const entries = msg.payload.feeds\n\nconst data = entries.map((entry) => {\n    return parseFloat(entry.field2)\n})\n\nconst labels = entries.map((entry) => {\n    return entry.created_at.substr(11,8)\n})\n\nmsg.payload = [{\n    \"series\": [\"Amount\"],\n    \"data\": [[...data]],\n    \"labels\": [...labels]\n}]\n\nreturn msg;",
         "outputs": 1,
@@ -1444,14 +1802,14 @@
         "y": 220,
         "wires": [
             [
-                "20e2ceb920b91a4b"
+                "1ee1fa6c5a491d26"
             ]
         ]
     },
     {
-        "id": "20e2ceb920b91a4b",
+        "id": "1ee1fa6c5a491d26",
         "type": "ui_chart",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "group": "2d66c14763805337",
         "order": 2,
@@ -1493,9 +1851,9 @@
         ]
     },
     {
-        "id": "49d53ceebd9ca4c1",
+        "id": "699a1a8eb52fc03c",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Prepare plate's percentage to push to Thingspeak",
         "func": "msg.payload = msg.payload.percentage\nmsg.topic = \"field3\"\nreturn msg;",
         "outputs": 1,
@@ -1508,14 +1866,14 @@
         "y": 460,
         "wires": [
             [
-                "959bb85625c29ee4"
+                "c21c625339ddd774"
             ]
         ]
     },
     {
-        "id": "9f25383364393433",
+        "id": "3c645cb9011540a0",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Parse data",
         "func": "const entries = msg.payload.feeds\n\nconst data = entries.map((entry) => {\n    return parseFloat(entry.field3)\n})\n\nconst labels = entries.map((entry) => {\n    return entry.created_at.substr(11,8)\n})\n\nmsg.payload = [{\n    \"series\": [\"Amount\"],\n    \"data\": [[...data]],\n    \"labels\": [...labels]\n}]\n\nreturn msg;",
         "outputs": 1,
@@ -1528,14 +1886,14 @@
         "y": 280,
         "wires": [
             [
-                "f4e0861ce237129e"
+                "ef31e8059bed94c9"
             ]
         ]
     },
     {
-        "id": "f4e0861ce237129e",
+        "id": "ef31e8059bed94c9",
         "type": "ui_chart",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "group": "2d66c14763805337",
         "order": 2,
@@ -1577,9 +1935,9 @@
         ]
     },
     {
-        "id": "ab9630d548df2c2c",
+        "id": "ee4eb3ce66309b54",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Prepare pet's eaten amount to send to Thingspeak",
         "func": "const old_plate_remain = flow.get(\"plate_remain\")\n\nconst current_plate_remain = msg.payload.num\n\nif(current_plate_remain < old_plate_remain){\n    msg.payload = old_plate_remain - current_plate_remain\n}\nelse{\n    msg.payload = 0\n}\nmsg.topic = \"field4\"\n\nflow.set(\"plate_remain\", current_plate_remain)\n\nreturn msg;",
         "outputs": 1,
@@ -1592,14 +1950,14 @@
         "y": 580,
         "wires": [
             [
-                "959bb85625c29ee4"
+                "c21c625339ddd774"
             ]
         ]
     },
     {
-        "id": "98860592e09ace01",
+        "id": "89b2e8ecbed2d71a",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Parse data",
         "func": "const entries = msg.payload.feeds\n\nconst data = entries.map((entry) => {\n    if (!isNaN(parseFloat(entry.field4))){\n        return parseFloat(entry.field4)\n    }\n    else{\n        return 0\n    }\n})\n\nconst labels = entries.map((entry) => {\n    return entry.created_at.substr(11,8)\n})\n\nmsg.payload = [{\n    \"series\": [\"Amount\"],\n    \"data\": [[...data]],\n    \"labels\": [...labels]\n}]\n\nreturn msg;",
         "outputs": 1,
@@ -1612,14 +1970,14 @@
         "y": 340,
         "wires": [
             [
-                "0df1919e8f729947"
+                "51aa8e1b60ce15cc"
             ]
         ]
     },
     {
-        "id": "0df1919e8f729947",
+        "id": "51aa8e1b60ce15cc",
         "type": "ui_chart",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "group": "2d66c14763805337",
         "order": 2,
@@ -1661,9 +2019,9 @@
         ]
     },
     {
-        "id": "8beeac5d7991808e",
+        "id": "28f08f9ec96b54c7",
         "type": "http request",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Send data to Thingspeak",
         "method": "POST",
         "ret": "txt",
@@ -1680,14 +2038,14 @@
         "y": 460,
         "wires": [
             [
-                "c25b9f4374317dfd"
+                "265859fb699b164c"
             ]
         ]
     },
     {
-        "id": "c25b9f4374317dfd",
+        "id": "265859fb699b164c",
         "type": "debug",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "debug 7",
         "active": true,
         "tosidebar": true,
@@ -1701,9 +2059,9 @@
         "wires": []
     },
     {
-        "id": "959bb85625c29ee4",
+        "id": "c21c625339ddd774",
         "type": "join",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "mode": "custom",
         "build": "object",
@@ -1724,14 +2082,14 @@
         "y": 460,
         "wires": [
             [
-                "a152368cdf2d8707"
+                "8a64ecded4d9bda1"
             ]
         ]
     },
     {
-        "id": "a152368cdf2d8707",
+        "id": "8a64ecded4d9bda1",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Filter",
         "func": "if (msg.payload.field4 === 0){\n    delete msg.payload.field4;\n}\nreturn msg;",
         "outputs": 1,
@@ -1744,15 +2102,15 @@
         "y": 460,
         "wires": [
             [
-                "33d77b7fe8b09544",
-                "8beeac5d7991808e"
+                "9c7a1ab8bc7961da",
+                "28f08f9ec96b54c7"
             ]
         ]
     },
     {
-        "id": "33d77b7fe8b09544",
+        "id": "9c7a1ab8bc7961da",
         "type": "debug",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "debug 8",
         "active": true,
         "tosidebar": true,
@@ -1766,9 +2124,9 @@
         "wires": []
     },
     {
-        "id": "954d7826e10e599f",
+        "id": "c190d8948465e7ef",
         "type": "debug",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "debug 9",
         "active": true,
         "tosidebar": true,
@@ -1782,9 +2140,9 @@
         "wires": []
     },
     {
-        "id": "72f9406693b0133b",
+        "id": "df0219eb05b01752",
         "type": "inject",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "props": [
             {
@@ -1806,15 +2164,15 @@
         "y": 280,
         "wires": [
             [
-                "172020e9151b7b95",
-                "aad275f54b8f9af1"
+                "36f3138f904c8071",
+                "ede85b7053eb2095"
             ]
         ]
     },
     {
-        "id": "30ba7b622d2aa610",
+        "id": "bb9498e45dbe4985",
         "type": "debug",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "debug 10",
         "active": true,
         "tosidebar": true,
@@ -1828,9 +2186,9 @@
         "wires": []
     },
     {
-        "id": "70bbb362f7ce005c",
+        "id": "8280567f9832043e",
         "type": "firebase-get",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Search account",
         "constraint": {
             "orderByChild": "username",
@@ -1849,14 +2207,14 @@
         "y": 1340,
         "wires": [
             [
-                "a75e9b6a12759ad0"
+                "2b444dd87f998fa5"
             ]
         ]
     },
     {
-        "id": "a75e9b6a12759ad0",
+        "id": "2b444dd87f998fa5",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Check for account's existence",
         "func": "const data = msg.payload\n\nif(data === null){\n    msg.payload = \"Wrong account/password\"\n    msg.topic = \"failure\"\n}\n\nfor (const key in data){\n    if(data.hasOwnProperty(key)){\n        msg.payload = data[key].password\n        msg.topic = \"get_password\"\n    }\n}\n\nreturn msg;",
         "outputs": 1,
@@ -1869,14 +2227,14 @@
         "y": 1400,
         "wires": [
             [
-                "de22f006a567e27c"
+                "517e791c12f1fc59"
             ]
         ]
     },
     {
-        "id": "de22f006a567e27c",
+        "id": "517e791c12f1fc59",
         "type": "join",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "mode": "custom",
         "build": "object",
@@ -1897,14 +2255,14 @@
         "y": 1460,
         "wires": [
             [
-                "89d6756ca698fd04"
+                "9857fe181c80c371"
             ]
         ]
     },
     {
-        "id": "89d6756ca698fd04",
+        "id": "9857fe181c80c371",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Check password",
         "func": "const data = msg.payload\n\nif(data.hasOwnProperty(\"failure\")){\n    msg.payload = {\n        failure: \"Wrong account/password\"\n    }\n}\nelse{\n    if(data.user.password === data.get_password){\n        msg.payload = {\n        success: \"Login completed\"\n        }\n    }\n    else{\n        msg.payload = {\n            failure: \"Wrong account/password\"\n        }\n    }\n}\n\nreturn msg;",
         "outputs": 1,
@@ -1917,16 +2275,16 @@
         "y": 1460,
         "wires": [
             [
-                "9c09e02cc734503d"
+                "48a3509801002536"
             ]
         ]
     },
     {
-        "id": "0a04e5f5b7b5bcb7",
+        "id": "a8d2c71182990e26",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Login complete",
-        "func": "msg.payload = {\n    \"tabs\": {\n        \"show\": [\"Home\", \"Statistics\"],\n        \"hide\": [\"Login\", \"Register\"]\n    },\n    \"tab\": \"Home\"\n}\nreturn msg;",
+        "func": "msg.payload = {\n    \"tabs\": {\n        \"show\": [\"Home\", \"Statistics\", \"Schedule\",\"Current Schedule\"],\n        \"hide\": [\"Login\", \"Register\"]\n    },\n    \"tab\": \"Home\"\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1937,14 +2295,14 @@
         "y": 1300,
         "wires": [
             [
-                "d57b6c6c90b48677"
+                "0276ae555c7816ef"
             ]
         ]
     },
     {
-        "id": "93d9cc1f4c860f6e",
+        "id": "2e99e5520e56cdf6",
         "type": "ui_form",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "label": "",
         "group": "3e45edafd7d05920",
@@ -1982,15 +2340,15 @@
         "y": 1540,
         "wires": [
             [
-                "93969bb7c93d2a3a",
-                "e70156c969c3b28a"
+                "59f0231a9d1aea72",
+                "70a2155321f2db59"
             ]
         ]
     },
     {
-        "id": "a951727cfb55fbdd",
+        "id": "22d9530633e40858",
         "type": "firebase-out",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Add account",
         "database": "72efe316941c7cdb",
         "path": "accounts",
@@ -2002,9 +2360,9 @@
         "wires": []
     },
     {
-        "id": "93969bb7c93d2a3a",
+        "id": "59f0231a9d1aea72",
         "type": "firebase-get",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Search account",
         "constraint": {
             "orderByChild": "username",
@@ -2023,14 +2381,14 @@
         "y": 1540,
         "wires": [
             [
-                "2f9a30c5a5c4b7e9"
+                "4824b1a9c410ce52"
             ]
         ]
     },
     {
-        "id": "2f9a30c5a5c4b7e9",
+        "id": "4824b1a9c410ce52",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Check username duplication",
         "func": "const data = msg.payload;\n\nif(data !== null){\n    msg.payload = \"Account has already existed\"\n    msg.topic = \"failure\"\n}\nelse{\n    msg.payload = \"Successfully created an account\"\n    msg.topic = \"success\"\n}\nreturn msg;",
         "outputs": 1,
@@ -2043,14 +2401,14 @@
         "y": 1540,
         "wires": [
             [
-                "e70156c969c3b28a"
+                "70a2155321f2db59"
             ]
         ]
     },
     {
-        "id": "e70156c969c3b28a",
+        "id": "70a2155321f2db59",
         "type": "join",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "mode": "custom",
         "build": "object",
@@ -2071,14 +2429,14 @@
         "y": 1600,
         "wires": [
             [
-                "887cada142bd6846"
+                "c855bbf0c3b77670"
             ]
         ]
     },
     {
-        "id": "887cada142bd6846",
+        "id": "c855bbf0c3b77670",
         "type": "switch",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -2101,19 +2459,19 @@
         "y": 1600,
         "wires": [
             [
-                "988a8c5e9c106922"
+                "11551ac7f14a1acb"
             ],
             [
-                "9511f4fa4ab089f7",
-                "096d213e3aabde31",
-                "294f0a27e98750c8"
+                "7e3cdb60716a359e",
+                "dd9197210faeb8bd",
+                "fa1c65ee8428c565"
             ]
         ]
     },
     {
-        "id": "9511f4fa4ab089f7",
+        "id": "7e3cdb60716a359e",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Get input account",
         "func": "msg.payload = msg.payload.user\n\nreturn msg;",
         "outputs": 1,
@@ -2126,14 +2484,14 @@
         "y": 1760,
         "wires": [
             [
-                "a951727cfb55fbdd"
+                "22d9530633e40858"
             ]
         ]
     },
     {
-        "id": "096d213e3aabde31",
+        "id": "dd9197210faeb8bd",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Create account success message",
         "func": "msg.payload = msg.payload.success\n\nreturn msg;",
         "outputs": 1,
@@ -2146,14 +2504,14 @@
         "y": 1640,
         "wires": [
             [
-                "1f5dc912882315c4"
+                "769f2fa6da097d7a"
             ]
         ]
     },
     {
-        "id": "988a8c5e9c106922",
+        "id": "11551ac7f14a1acb",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Create account failure message",
         "func": "msg.payload = msg.payload.failure\n\nreturn msg;",
         "outputs": 1,
@@ -2166,14 +2524,14 @@
         "y": 1580,
         "wires": [
             [
-                "1f5dc912882315c4"
+                "769f2fa6da097d7a"
             ]
         ]
     },
     {
-        "id": "294f0a27e98750c8",
+        "id": "fa1c65ee8428c565",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Navigate to Login",
         "func": "msg.payload = {\n    \"tab\": \"Login\"\n}\n\nreturn msg;",
         "outputs": 1,
@@ -2186,14 +2544,14 @@
         "y": 1700,
         "wires": [
             [
-                "09e7c19144b0faa2"
+                "172028c25264dc5a"
             ]
         ]
     },
     {
-        "id": "09e7c19144b0faa2",
+        "id": "172028c25264dc5a",
         "type": "ui_ui_control",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "events": "all",
         "x": 1080,
@@ -2203,9 +2561,9 @@
         ]
     },
     {
-        "id": "b5e223ce52159cf4",
+        "id": "9202be20442468f5",
         "type": "comment",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "info": "Cứ 30s lấy data 1 lần",
         "x": 1040,
@@ -2213,9 +2571,9 @@
         "wires": []
     },
     {
-        "id": "71c7d0d112fb9fd8",
+        "id": "506b25f89a3b344f",
         "type": "comment",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "info": "Gửi dữ liệu từ ESP qua đây bằng MQTT nên\ndelay cỡ 15-20s do Thingspeak hàng free\nkhông cho push data nhanh",
         "x": 100,
@@ -2223,9 +2581,9 @@
         "wires": []
     },
     {
-        "id": "aad275f54b8f9af1",
+        "id": "ede85b7053eb2095",
         "type": "http request",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Get eaten amount in a day",
         "method": "GET",
         "ret": "txt",
@@ -2242,14 +2600,14 @@
         "y": 400,
         "wires": [
             [
-                "b9f2e509d46beb6b"
+                "2b18254721c5aedd"
             ]
         ]
     },
     {
-        "id": "b9f2e509d46beb6b",
+        "id": "2b18254721c5aedd",
         "type": "json",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "property": "payload",
         "action": "",
@@ -2258,14 +2616,14 @@
         "y": 400,
         "wires": [
             [
-                "36cd4545052b816d"
+                "499168c72ef87a70"
             ]
         ]
     },
     {
-        "id": "36cd4545052b816d",
+        "id": "499168c72ef87a70",
         "type": "function",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "Parse data",
         "func": "const entries = msg.payload.feeds\n\nmsg.payload = entries[entries.length -1].field4\n\nreturn msg;",
         "outputs": 1,
@@ -2278,18 +2636,1304 @@
         "y": 400,
         "wires": [
             [
-                "a60863c544de65e6"
+                "7b29ab85e7fb169b"
             ]
         ]
     },
     {
-        "id": "13c98c77aedc44e5",
+        "id": "d22c05803bf54876",
         "type": "comment",
-        "z": "1c38bb45ab2e35d1",
+        "z": "4e33cf5b03df07b7",
         "name": "",
         "info": "Login với Register dùng firebase, không\nhash password",
         "x": 100,
         "y": 1280,
         "wires": []
+    },
+    {
+        "id": "8149ca277796e094",
+        "type": "ui_form",
+        "z": "aeec0018a0fd818f",
+        "name": "",
+        "label": "Monday",
+        "group": "9cfe263e84390285",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "options": [
+            {
+                "label": "Meal 1",
+                "value": "meal_1",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_1",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Meal 2",
+                "value": "meal_2",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_2",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Meal 3",
+                "value": "meal_3",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_3",
+                "type": "number",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "meal_1": "",
+            "amount_1": "",
+            "meal_2": "",
+            "amount_2": "",
+            "meal_3": "",
+            "amount_3": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": true,
+        "className": "",
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "31e65e57f289e979"
+            ]
+        ]
+    },
+    {
+        "id": "b1f196ebe376ee79",
+        "type": "ui_form",
+        "z": "aeec0018a0fd818f",
+        "name": "",
+        "label": "Tuesday",
+        "group": "9cfe263e84390285",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "options": [
+            {
+                "label": "Meal 1",
+                "value": "meal_1",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_1",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Meal 2",
+                "value": "meal_2",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_2",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Meal 3",
+                "value": "meal_3",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_3",
+                "type": "number",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "meal_1": "",
+            "amount_1": "",
+            "meal_2": "",
+            "amount_2": "",
+            "meal_3": "",
+            "amount_3": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": true,
+        "className": "",
+        "x": 100,
+        "y": 140,
+        "wires": [
+            [
+                "502b93f466bfbd46"
+            ]
+        ]
+    },
+    {
+        "id": "502b93f466bfbd46",
+        "type": "function",
+        "z": "aeec0018a0fd818f",
+        "name": "parse data",
+        "func": "const day = \"Tue\"\nconst time = []\nconst quantity = []\nfor (let i = 1; i <= 3; i++) {\n    const mealKey = `meal_${i}`;\n    const amountKey = `amount_${i}`;\n    const mealValue = msg.payload[mealKey];\n    const amountValue = msg.payload[amountKey];\n\n    if (mealValue !== null && amountValue !== null) {\n        // Parse thời gian để chỉ lấy giờ và phút\n        const parsedTime = new Date(mealValue);\n        const formattedTime = `${parsedTime.getHours()}:${parsedTime.getMinutes()}`;\n        time.push(formattedTime);\n        quantity.push(amountValue);\n    }\n}\nmsg.payload = {\n    day: day,\n    time: time,\n    quantity: quantity\n}\nmsg.topic = \"data\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 140,
+        "wires": [
+            [
+                "12db5a9385c364f4",
+                "40cc7505f99a28c0"
+            ]
+        ]
+    },
+    {
+        "id": "dfa1a520f5462eec",
+        "type": "ui_form",
+        "z": "aeec0018a0fd818f",
+        "name": "",
+        "label": "Wednesday",
+        "group": "9cfe263e84390285",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "options": [
+            {
+                "label": "Meal 1",
+                "value": "meal_1",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_1",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Meal 2",
+                "value": "meal_2",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_2",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Meal 3",
+                "value": "meal_3",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_3",
+                "type": "number",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "meal_1": "",
+            "amount_1": "",
+            "meal_2": "",
+            "amount_2": "",
+            "meal_3": "",
+            "amount_3": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": true,
+        "className": "",
+        "x": 110,
+        "y": 180,
+        "wires": [
+            [
+                "584412aefef6394e"
+            ]
+        ]
+    },
+    {
+        "id": "584412aefef6394e",
+        "type": "function",
+        "z": "aeec0018a0fd818f",
+        "name": "parse data",
+        "func": "const day = \"Wed\"\nconst time = []\nconst quantity = []\nfor (let i = 1; i <= 3; i++) {\n    const mealKey = `meal_${i}`;\n    const amountKey = `amount_${i}`;\n    const mealValue = msg.payload[mealKey];\n    const amountValue = msg.payload[amountKey];\n\n    if (mealValue !== null && amountValue !== null) {\n        // Parse thời gian để chỉ lấy giờ và phút\n        const parsedTime = new Date(mealValue);\n        const formattedTime = `${parsedTime.getHours()}:${parsedTime.getMinutes()}`;\n        time.push(formattedTime);\n        quantity.push(amountValue);\n    }\n}\nmsg.payload = {\n    day: day,\n    time: time,\n    quantity: quantity\n}\nmsg.topic = \"data\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 180,
+        "wires": [
+            [
+                "40cc7505f99a28c0",
+                "12db5a9385c364f4"
+            ]
+        ]
+    },
+    {
+        "id": "b8241e1f2b449f47",
+        "type": "ui_form",
+        "z": "aeec0018a0fd818f",
+        "name": "",
+        "label": "Thursday",
+        "group": "9cfe263e84390285",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "options": [
+            {
+                "label": "Meal 1",
+                "value": "meal_1",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_1",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Meal 2",
+                "value": "meal_2",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_2",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Meal 3",
+                "value": "meal_3",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_3",
+                "type": "number",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "meal_1": "",
+            "amount_1": "",
+            "meal_2": "",
+            "amount_2": "",
+            "meal_3": "",
+            "amount_3": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": true,
+        "className": "",
+        "x": 100,
+        "y": 220,
+        "wires": [
+            [
+                "34d590fd13aa66c2"
+            ]
+        ]
+    },
+    {
+        "id": "34d590fd13aa66c2",
+        "type": "function",
+        "z": "aeec0018a0fd818f",
+        "name": "parse data",
+        "func": "const day = \"Thu\"\nconst time = []\nconst quantity = []\nfor (let i = 1; i <= 3; i++) {\n    const mealKey = `meal_${i}`;\n    const amountKey = `amount_${i}`;\n    const mealValue = msg.payload[mealKey];\n    const amountValue = msg.payload[amountKey];\n\n    if (mealValue !== null && amountValue !== null) {\n        // Parse thời gian để chỉ lấy giờ và phút\n        const parsedTime = new Date(mealValue);\n        const formattedTime = `${parsedTime.getHours()}:${parsedTime.getMinutes()}`;\n        time.push(formattedTime);\n        quantity.push(amountValue);\n    }\n}\nmsg.payload = {\n    day: day,\n    time: time,\n    quantity: quantity\n}\nmsg.topic = \"data\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 220,
+        "wires": [
+            [
+                "40cc7505f99a28c0",
+                "12db5a9385c364f4"
+            ]
+        ]
+    },
+    {
+        "id": "a7e7da37a01019c1",
+        "type": "ui_form",
+        "z": "aeec0018a0fd818f",
+        "name": "",
+        "label": "Friday",
+        "group": "9cfe263e84390285",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "options": [
+            {
+                "label": "Meal 1",
+                "value": "meal_1",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_1",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Meal 2",
+                "value": "meal_2",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_2",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Meal 3",
+                "value": "meal_3",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_3",
+                "type": "number",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "meal_1": "",
+            "amount_1": "",
+            "meal_2": "",
+            "amount_2": "",
+            "meal_3": "",
+            "amount_3": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": true,
+        "className": "",
+        "x": 90,
+        "y": 260,
+        "wires": [
+            [
+                "60c102e19a29e3f3"
+            ]
+        ]
+    },
+    {
+        "id": "60c102e19a29e3f3",
+        "type": "function",
+        "z": "aeec0018a0fd818f",
+        "name": "parse data",
+        "func": "const day = \"Fri\"\nconst time = []\nconst quantity = []\nfor (let i = 1; i <= 3; i++) {\n    const mealKey = `meal_${i}`;\n    const amountKey = `amount_${i}`;\n    const mealValue = msg.payload[mealKey];\n    const amountValue = msg.payload[amountKey];\n\n    if (mealValue !== null && amountValue !== null) {\n        // Parse thời gian để chỉ lấy giờ và phút\n        const parsedTime = new Date(mealValue);\n        const formattedTime = `${parsedTime.getHours()}:${parsedTime.getMinutes()}`;\n        time.push(formattedTime);\n        quantity.push(amountValue);\n    }\n}\nmsg.payload = {\n    day: day,\n    time: time,\n    quantity: quantity\n}\nmsg.topic = \"data\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 260,
+        "wires": [
+            [
+                "40cc7505f99a28c0",
+                "12db5a9385c364f4"
+            ]
+        ]
+    },
+    {
+        "id": "c6cab5a03c86669e",
+        "type": "ui_form",
+        "z": "aeec0018a0fd818f",
+        "name": "",
+        "label": "Saturday",
+        "group": "9cfe263e84390285",
+        "order": 6,
+        "width": 6,
+        "height": 1,
+        "options": [
+            {
+                "label": "Meal 1",
+                "value": "meal_1",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_1",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Meal 2",
+                "value": "meal_2",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_2",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Meal 3",
+                "value": "meal_3",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_3",
+                "type": "number",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "meal_1": "",
+            "amount_1": "",
+            "meal_2": "",
+            "amount_2": "",
+            "meal_3": "",
+            "amount_3": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": true,
+        "className": "",
+        "x": 100,
+        "y": 300,
+        "wires": [
+            [
+                "be3d6d7053ec948f"
+            ]
+        ]
+    },
+    {
+        "id": "be3d6d7053ec948f",
+        "type": "function",
+        "z": "aeec0018a0fd818f",
+        "name": "parse data",
+        "func": "const day = \"Sat\"\nconst time = []\nconst quantity = []\nfor (let i = 1; i <= 3; i++) {\n    const mealKey = `meal_${i}`;\n    const amountKey = `amount_${i}`;\n    const mealValue = msg.payload[mealKey];\n    const amountValue = msg.payload[amountKey];\n\n    if (mealValue !== null && amountValue !== null) {\n        // Parse thời gian để chỉ lấy giờ và phút\n        const parsedTime = new Date(mealValue);\n        const formattedTime = `${parsedTime.getHours()}:${parsedTime.getMinutes()}`;\n        time.push(formattedTime);\n        quantity.push(amountValue);\n    }\n}\nmsg.payload = {\n    day: day,\n    time: time,\n    quantity: quantity\n}\nmsg.topic = \"data\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 300,
+        "wires": [
+            [
+                "40cc7505f99a28c0",
+                "12db5a9385c364f4"
+            ]
+        ]
+    },
+    {
+        "id": "ae65b6af9e7e53ca",
+        "type": "ui_form",
+        "z": "aeec0018a0fd818f",
+        "name": "",
+        "label": "Sunday",
+        "group": "9cfe263e84390285",
+        "order": 7,
+        "width": 6,
+        "height": 1,
+        "options": [
+            {
+                "label": "Meal 1",
+                "value": "meal_1",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_1",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Meal 2",
+                "value": "meal_2",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_2",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Meal 3",
+                "value": "meal_3",
+                "type": "time",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Food",
+                "value": "amount_3",
+                "type": "number",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "meal_1": "",
+            "amount_1": "",
+            "meal_2": "",
+            "amount_2": "",
+            "meal_3": "",
+            "amount_3": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": true,
+        "className": "",
+        "x": 100,
+        "y": 340,
+        "wires": [
+            [
+                "0faa0216275e5d22"
+            ]
+        ]
+    },
+    {
+        "id": "0faa0216275e5d22",
+        "type": "function",
+        "z": "aeec0018a0fd818f",
+        "name": "parse data",
+        "func": "const day = \"Sun\"\nconst time = []\nconst quantity = []\nfor (let i = 1; i <= 3; i++) {\n    const mealKey = `meal_${i}`;\n    const amountKey = `amount_${i}`;\n    const mealValue = msg.payload[mealKey];\n    const amountValue = msg.payload[amountKey];\n\n    if (mealValue !== null && amountValue !== null) {\n        // Parse thời gian để chỉ lấy giờ và phút\n        const parsedTime = new Date(mealValue);\n        const formattedTime = `${parsedTime.getHours()}:${parsedTime.getMinutes()}`;\n        time.push(formattedTime);\n        quantity.push(amountValue);\n    }\n}\nmsg.payload = {\n    day: day,\n    time: time,\n    quantity: quantity\n}\nmsg.topic = \"data\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 340,
+        "wires": [
+            [
+                "40cc7505f99a28c0",
+                "12db5a9385c364f4"
+            ]
+        ]
+    },
+    {
+        "id": "65fbe3881b6dbd94",
+        "type": "function",
+        "z": "aeec0018a0fd818f",
+        "name": "function 15",
+        "func": "var data = msg.payload;\nvar daydata = [];\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Mon\") {\n            currentItem.day = \"Monday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHourMinute = parsedTime ? `${parsedTime[0]}h${parsedTime[1]}` : \"\";\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 620,
+        "wires": [
+            [
+                "c80d21f415ac3bb5"
+            ]
+        ]
+    },
+    {
+        "id": "c80d21f415ac3bb5",
+        "type": "ui_list",
+        "z": "aeec0018a0fd818f",
+        "group": "4c5c83bbf054b470",
+        "name": "Monday",
+        "order": 1,
+        "width": 5,
+        "height": 5,
+        "lineType": "three",
+        "actionType": "none",
+        "allowHTML": true,
+        "outputs": 0,
+        "topic": "schedule",
+        "x": 740,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "8deba2c7e3677b52",
+        "type": "function",
+        "z": "aeec0018a0fd818f",
+        "name": "function 17",
+        "func": "msg.payload = Object.keys(msg.payload)[0]\nmsg.topic = \"id\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 360,
+        "wires": [
+            [
+                "12db5a9385c364f4"
+            ]
+        ]
+    },
+    {
+        "id": "40cc7505f99a28c0",
+        "type": "firebase-get",
+        "z": "aeec0018a0fd818f",
+        "name": "",
+        "constraint": {
+            "orderByChild": "day",
+            "equalTo": {
+                "value": "payload.day",
+                "type": "msg"
+            }
+        },
+        "database": "72efe316941c7cdb",
+        "outputType": "auto",
+        "passThrough": false,
+        "path": "schedule",
+        "pathType": "str",
+        "useConstraint": true,
+        "x": 500,
+        "y": 360,
+        "wires": [
+            [
+                "8deba2c7e3677b52"
+            ]
+        ]
+    },
+    {
+        "id": "12db5a9385c364f4",
+        "type": "join",
+        "z": "aeec0018a0fd818f",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 810,
+        "y": 260,
+        "wires": [
+            [
+                "67786f7d39fa2dc0"
+            ]
+        ]
+    },
+    {
+        "id": "67786f7d39fa2dc0",
+        "type": "function",
+        "z": "aeec0018a0fd818f",
+        "name": "function 18",
+        "func": "const path = 'schedule/' + msg.payload.id\n\nmsg.payload = msg.payload.data\nmsg.topic = path\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 260,
+        "wires": [
+            [
+                "9d04189635adbb53"
+            ]
+        ]
+    },
+    {
+        "id": "9d04189635adbb53",
+        "type": "firebase-out",
+        "z": "aeec0018a0fd818f",
+        "name": "",
+        "database": "72efe316941c7cdb",
+        "path": "topic",
+        "pathType": "msg",
+        "priority": 1,
+        "queryType": "update",
+        "x": 1120,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "31e65e57f289e979",
+        "type": "function",
+        "z": "aeec0018a0fd818f",
+        "name": "parse data",
+        "func": "const day = \"Mon\";\nconst time = [];\nconst quantity = [];\n\nfor (let i = 1; i <= 3; i++) {\n    const mealKey = `meal_${i}`;\n    const amountKey = `amount_${i}`;\n\n    const mealValue = msg.payload[mealKey];\n    const amountValue = msg.payload[amountKey];\n\n    if (mealValue !== null && amountValue !== null) {\n        // Parse thời gian để chỉ lấy giờ và phút\n        const parsedTime = new Date(mealValue);\n        const formattedTime = `${parsedTime.getHours()}:${parsedTime.getMinutes()}`;\n        time.push(formattedTime);\n        quantity.push(amountValue);\n    }\n}\n\nmsg.payload = {\n    day: day,\n    time: time,\n    quantity: quantity\n\n};\nmsg.topic = \"data\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 100,
+        "wires": [
+            [
+                "40cc7505f99a28c0",
+                "12db5a9385c364f4"
+            ]
+        ]
+    },
+    {
+        "id": "7b22d54f98efd88c",
+        "type": "mqtt out",
+        "z": "aeec0018a0fd818f",
+        "name": "",
+        "topic": "/PetFeeder/schedule",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "989a90dfdbfa79d0",
+        "x": 940,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "5b97be79c2f2ed18",
+        "type": "inject",
+        "z": "aeec0018a0fd818f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 00 * * *",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 500,
+        "wires": [
+            [
+                "e2649e18122e28e3"
+            ]
+        ]
+    },
+    {
+        "id": "e2649e18122e28e3",
+        "type": "function",
+        "z": "aeec0018a0fd818f",
+        "name": "Get current date to query",
+        "func": "var days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thu', 'Fri', 'Sat'];\n\nvar now = new Date();\nvar day = days[now.getDay()];\nmsg.payload = day;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 500,
+        "wires": [
+            [
+                "59065200758bac5d"
+            ]
+        ]
+    },
+    {
+        "id": "59065200758bac5d",
+        "type": "firebase-get",
+        "z": "aeec0018a0fd818f",
+        "name": "",
+        "constraint": {
+            "orderByChild": "day",
+            "equalTo": {
+                "value": "payload",
+                "type": "msg"
+            }
+        },
+        "database": "72efe316941c7cdb",
+        "outputType": "auto",
+        "passThrough": false,
+        "path": "schedule",
+        "pathType": "str",
+        "useConstraint": true,
+        "x": 540,
+        "y": 500,
+        "wires": [
+            [
+                "74185e9181f57895"
+            ]
+        ]
+    },
+    {
+        "id": "74185e9181f57895",
+        "type": "function",
+        "z": "aeec0018a0fd818f",
+        "name": "get schedule of today",
+        "func": "const data = msg.payload\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        msg.payload = data[key]\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 500,
+        "wires": [
+            [
+                "7b22d54f98efd88c"
+            ]
+        ]
+    },
+    {
+        "id": "8968f1aa4ef08520",
+        "type": "complete",
+        "z": "aeec0018a0fd818f",
+        "name": "",
+        "scope": [
+            "9d04189635adbb53"
+        ],
+        "uncaught": false,
+        "x": 130,
+        "y": 560,
+        "wires": [
+            [
+                "e2649e18122e28e3",
+                "c739aff9dd6b0adc",
+                "a5b9dc7130979d54"
+            ]
+        ]
+    },
+    {
+        "id": "c739aff9dd6b0adc",
+        "type": "firebase-get",
+        "z": "aeec0018a0fd818f",
+        "name": "",
+        "constraint": {},
+        "database": "72efe316941c7cdb",
+        "outputType": "auto",
+        "passThrough": false,
+        "path": "schedule",
+        "pathType": "str",
+        "useConstraint": false,
+        "x": 340,
+        "y": 620,
+        "wires": [
+            [
+                "65fbe3881b6dbd94",
+                "a64b850e99994bbd",
+                "fc48b5097b74f30d",
+                "b10b302381c31c50",
+                "46a99d4c287d469e",
+                "381bfc0c022c8eb1",
+                "539d8229d79d8bfa"
+            ]
+        ]
+    },
+    {
+        "id": "2272f0a4f8c416c6",
+        "type": "inject",
+        "z": "aeec0018a0fd818f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 620,
+        "wires": [
+            [
+                "c739aff9dd6b0adc"
+            ]
+        ]
+    },
+    {
+        "id": "a64b850e99994bbd",
+        "type": "function",
+        "z": "aeec0018a0fd818f",
+        "name": "function 19",
+        "func": "var data = msg.payload;\nvar daydata = [];\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Tue\") {\n            currentItem.day = \"Tuesday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHourMinute = parsedTime ? `${parsedTime[0]}h${parsedTime[1]}` : \"\";\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 660,
+        "wires": [
+            [
+                "cb08ea257c5e4723"
+            ]
+        ]
+    },
+    {
+        "id": "cb08ea257c5e4723",
+        "type": "ui_list",
+        "z": "aeec0018a0fd818f",
+        "group": "4c5c83bbf054b470",
+        "name": "Tuesday",
+        "order": 3,
+        "width": 5,
+        "height": 5,
+        "lineType": "three",
+        "actionType": "none",
+        "allowHTML": true,
+        "outputs": 0,
+        "topic": "schedule",
+        "x": 740,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "fc48b5097b74f30d",
+        "type": "function",
+        "z": "aeec0018a0fd818f",
+        "name": "function 20",
+        "func": "var data = msg.payload;\nvar daydata = [];\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Wed\") {\n            currentItem.day = \"Wednesday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHourMinute = parsedTime ? `${parsedTime[0]}h${parsedTime[1]}` : \"\";\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 700,
+        "wires": [
+            [
+                "119cdd128365ba3d"
+            ]
+        ]
+    },
+    {
+        "id": "119cdd128365ba3d",
+        "type": "ui_list",
+        "z": "aeec0018a0fd818f",
+        "group": "4c5c83bbf054b470",
+        "name": "Wednesday",
+        "order": 5,
+        "width": 5,
+        "height": 5,
+        "lineType": "three",
+        "actionType": "none",
+        "allowHTML": true,
+        "outputs": 0,
+        "topic": "schedule",
+        "x": 750,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "b10b302381c31c50",
+        "type": "function",
+        "z": "aeec0018a0fd818f",
+        "name": "function 21",
+        "func": "var data = msg.payload;\nvar daydata = [];\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Thu\") {\n            currentItem.day = \"Thursday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHourMinute = parsedTime ? `${parsedTime[0]}h${parsedTime[1]}` : \"\";\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 740,
+        "wires": [
+            [
+                "f7f9227e68733cb0"
+            ]
+        ]
+    },
+    {
+        "id": "f7f9227e68733cb0",
+        "type": "ui_list",
+        "z": "aeec0018a0fd818f",
+        "group": "4c5c83bbf054b470",
+        "name": "Thursday",
+        "order": 15,
+        "width": 5,
+        "height": 5,
+        "lineType": "three",
+        "actionType": "none",
+        "allowHTML": true,
+        "outputs": 0,
+        "topic": "schedule",
+        "x": 740,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "46a99d4c287d469e",
+        "type": "function",
+        "z": "aeec0018a0fd818f",
+        "name": "function 22",
+        "func": "var data = msg.payload;\nvar daydata = [];\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Fri\") {\n            currentItem.day = \"Friday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHourMinute = parsedTime ? `${parsedTime[0]}h${parsedTime[1]}` : \"\";\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 780,
+        "wires": [
+            [
+                "0286485ceea7cd3d"
+            ]
+        ]
+    },
+    {
+        "id": "0286485ceea7cd3d",
+        "type": "ui_list",
+        "z": "aeec0018a0fd818f",
+        "group": "4c5c83bbf054b470",
+        "name": "Friday",
+        "order": 17,
+        "width": 5,
+        "height": 5,
+        "lineType": "three",
+        "actionType": "none",
+        "allowHTML": true,
+        "outputs": 0,
+        "topic": "schedule",
+        "x": 730,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "381bfc0c022c8eb1",
+        "type": "function",
+        "z": "aeec0018a0fd818f",
+        "name": "function 23",
+        "func": "var data = msg.payload;\nvar daydata = [];\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Sat\") {\n            currentItem.day = \"Saturday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHourMinute = parsedTime ? `${parsedTime[0]}h${parsedTime[1]}` : \"\";\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 820,
+        "wires": [
+            [
+                "c60b1a704fca2ca1"
+            ]
+        ]
+    },
+    {
+        "id": "c60b1a704fca2ca1",
+        "type": "ui_list",
+        "z": "aeec0018a0fd818f",
+        "group": "4c5c83bbf054b470",
+        "name": "Saturday",
+        "order": 19,
+        "width": 5,
+        "height": 5,
+        "lineType": "three",
+        "actionType": "none",
+        "allowHTML": true,
+        "outputs": 0,
+        "topic": "schedule",
+        "x": 740,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "539d8229d79d8bfa",
+        "type": "function",
+        "z": "aeec0018a0fd818f",
+        "name": "function 24",
+        "func": "var data = msg.payload;\nvar daydata = [];\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Sun\") {\n            currentItem.day = \"Sunday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHourMinute = parsedTime ? `${parsedTime[0]}h${parsedTime[1]}` : \"\";\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 860,
+        "wires": [
+            [
+                "f548c825ebd6a67c"
+            ]
+        ]
+    },
+    {
+        "id": "f548c825ebd6a67c",
+        "type": "ui_list",
+        "z": "aeec0018a0fd818f",
+        "group": "4c5c83bbf054b470",
+        "name": "Sunday",
+        "order": 30,
+        "width": 5,
+        "height": 4,
+        "lineType": "three",
+        "actionType": "none",
+        "allowHTML": true,
+        "outputs": 0,
+        "topic": "schedule",
+        "x": 740,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "504850874bba57bf",
+        "type": "ui_toast",
+        "z": "aeec0018a0fd818f",
+        "position": "bottom right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Notification",
+        "name": "",
+        "x": 530,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "a5b9dc7130979d54",
+        "type": "function",
+        "z": "aeec0018a0fd818f",
+        "name": "function 25",
+        "func": "msg.payload = \"Schedule have been updated!\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 560,
+        "wires": [
+            [
+                "504850874bba57bf"
+            ]
+        ]
     }
 ]
