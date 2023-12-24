@@ -1,19 +1,288 @@
 [
     {
-        "id": "4e33cf5b03df07b7",
+        "id": "8cb57750c270cbc8",
         "type": "tab",
-        "label": "Hoang Lam",
+        "label": "Flow 1",
         "disabled": false,
         "info": "",
         "env": []
     },
     {
-        "id": "aeec0018a0fd818f",
+        "id": "59541606100e1c83",
         "type": "tab",
-        "label": "Truong Binh",
+        "label": "Flow 2",
         "disabled": false,
         "info": "",
         "env": []
+    },
+    {
+        "id": "aa387e2f0d42ffcb",
+        "type": "group",
+        "z": "8cb57750c270cbc8",
+        "name": "Send message via IFTTT (deprecated, handled by ESP8266)",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "7632bf76a8fb8ea1",
+            "8a4a59a77afd4d7c",
+            "dda6c6bf5dc0af38",
+            "9cbc3664d7245acf",
+            "3fa582ff1a6d923d",
+            "b1560d31d3af2865"
+        ],
+        "x": 1014,
+        "y": 59,
+        "w": 1092,
+        "h": 122
+    },
+    {
+        "id": "6121089994c735e9",
+        "type": "group",
+        "z": "8cb57750c270cbc8",
+        "name": "Food container's data",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "0ab2311e8ee9db55",
+            "d0fb4cffb7efe298",
+            "cb1c4d5ddc084e15",
+            "4b54e9dfa4699251",
+            "7714559d5a0fdae4",
+            "c4c8373322522680",
+            "2859584a56237ddd"
+        ],
+        "x": 14,
+        "y": 59,
+        "w": 932,
+        "h": 182
+    },
+    {
+        "id": "f2f36c32d53093ef",
+        "type": "group",
+        "z": "8cb57750c270cbc8",
+        "name": "Food plate's data",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "7eb374d38b043e77",
+            "e192f1ff41eac710",
+            "3484c0500be9f911",
+            "26eaf7f97363dfcf",
+            "6a35d814b15cfb0f",
+            "7faa1b13f7f64518",
+            "47c5f12e4555a9ef"
+        ],
+        "x": 14,
+        "y": 299,
+        "w": 952,
+        "h": 242
+    },
+    {
+        "id": "e91f5d42b973c39b",
+        "type": "group",
+        "z": "8cb57750c270cbc8",
+        "name": "Send data to ThingSpeak",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b536e87dd5f6240f",
+            "015c591152a666b6",
+            "b7e2a94334a13e0a",
+            "2b26d5ce8260c705",
+            "0eb2fb2797d105d6"
+        ],
+        "x": 1014,
+        "y": 259,
+        "w": 752,
+        "h": 142
+    },
+    {
+        "id": "5fa57a33c8c22a91",
+        "type": "group",
+        "z": "8cb57750c270cbc8",
+        "name": "Manual feeding",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d5ceeacb98b12bd7",
+            "e6fcab6370d6f581",
+            "ab3e266a8a0aab9a",
+            "4e5988f4fa1c4a3c",
+            "e22ef872c5258e82",
+            "d4c1d8f4f5bfd649",
+            "80f586ee6bdeb337",
+            "83459e41144e7fec",
+            "d4bf301d90ffb42f",
+            "b6fb1aa0f1bcbcbf",
+            "bc4f0b9a66a70aa7"
+        ],
+        "x": 14,
+        "y": 599,
+        "w": 1012,
+        "h": 202
+    },
+    {
+        "id": "649ac7994d2c9754",
+        "type": "group",
+        "z": "8cb57750c270cbc8",
+        "name": "Initialization, login and register",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "2c4dcdc868085b78",
+            "f76e01fdb2e63566",
+            "61eb2bb9548da506",
+            "02df54cd56f04f5b",
+            "e339974adb91f8cd",
+            "2a878a074d5e084d",
+            "0e72793af18ed8c0",
+            "199c501cae4237e6",
+            "22ed6802f714b77e",
+            "b105a6a59313121b",
+            "1f31f9d5e78e7636",
+            "221a8db54457315c",
+            "9a37cfc59b9e50db",
+            "d481518dc60239e1",
+            "7812155d4f3d8392",
+            "e2c967381011d9f7",
+            "73cd45ba9fbd12e7",
+            "2daa4cb49ab20448",
+            "5b5f2713db759aee",
+            "428f6e140e764550",
+            "bc34547580822004",
+            "df3f87a51866c91d",
+            "cde3d5c964af9ce5",
+            "db4f4729c1ef3a91",
+            "ed507e8142d4bbd5"
+        ],
+        "x": 14,
+        "y": 1519,
+        "w": 1232,
+        "h": 622
+    },
+    {
+        "id": "b7d59f86b2ee88cc",
+        "type": "group",
+        "z": "59541606100e1c83",
+        "name": "Set schedule",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d1c19663685c132c",
+            "b3f64b71beadf503",
+            "4706b12e596afbb6",
+            "513c01d17e405f21",
+            "a519b7a5789e7f8f",
+            "0e865ee211eb49f6",
+            "3a48c50918db5446",
+            "cf96d6359eaa35bd",
+            "4cf228a07a8b89da",
+            "d14e5053f9b0b4bb",
+            "003b8f21b81dd47e",
+            "1c2438192f9b7152",
+            "00737ebbdb7354cd",
+            "5dc59026099f274c",
+            "cd338edfa99dfe11",
+            "76fd94264ed5903d",
+            "db46a611083ffe2d",
+            "206519fbd154b5d3",
+            "19860ffcae497985"
+        ],
+        "x": 14,
+        "y": 59,
+        "w": 1192,
+        "h": 342
+    },
+    {
+        "id": "3a7e8f5475508b6f",
+        "type": "group",
+        "z": "59541606100e1c83",
+        "name": "Send daily schedule with MQTT and show the whole schedule in website",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "44dc0c6324261b21",
+            "e01e1ba4ab358e48",
+            "0114a70e2aba719e",
+            "ac1e87f2d19cf745",
+            "3a78483fd287a2ef",
+            "36d9ae9f6df43ffe",
+            "2722d0cf0eecb70c",
+            "9216c7216f4dbd6b",
+            "e43f52cae091f6d2",
+            "6ea659e13ac71ceb",
+            "3316fb2b988f4db7",
+            "d0ed56cf44098720",
+            "7f449d3e2db723d6",
+            "477b0a2d1cf8b8dc",
+            "1282fc76da8a7f6c",
+            "07330db0f2a9ca2b",
+            "12090d0ddb697fd6",
+            "7d2f3462eec5b23f",
+            "c8f54d5b12df7269",
+            "c3fb45723be792bc",
+            "bb8c3a40094e9c3f",
+            "0076cbcc91bf9d4f",
+            "3c32b200476e63e2",
+            "61b25ea218b82461"
+        ],
+        "x": 14,
+        "y": 459,
+        "w": 1052,
+        "h": 442
+    },
+    {
+        "id": "32b9074e20077c31",
+        "type": "group",
+        "z": "8cb57750c270cbc8",
+        "name": "Get data from ThingSpeak for statistics",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f08ed4c2e54458ae",
+            "6666e9bdad490c91",
+            "14233061d6d9e0e8",
+            "c1c1e1b5a34a4b7a",
+            "daafaf1b4b4eb69b",
+            "6a77e3cd58af1ba0",
+            "447ebdad0354f801",
+            "4f5c2f78a8863fb9",
+            "45c9f636154cbfe7",
+            "a7b590f2d3716f99",
+            "455455352a95613d",
+            "5b8851eb1f1cbb6a",
+            "55d5c6d50d7899d7",
+            "0d9153855cbefa17",
+            "14b2cf38376f4f1f",
+            "3f91e487d7968a3a",
+            "3d8dd9b84cfd205d",
+            "1c16077007266a4e",
+            "57be545be5ad6674",
+            "23069d03f0e68966",
+            "a00e3e18af3e9399",
+            "7f0fcee1ac394ee1",
+            "a7661709c3721c12",
+            "04d7cbf598a02aad",
+            "9a76d01205eba4ef",
+            "dde3b3ea5cbdd9c9",
+            "efb9737f417a240a",
+            "22d47acdf3a47b3c",
+            "c312e3dc1586f626",
+            "ba5e525c52e43859"
+        ],
+        "x": 14,
+        "y": 859,
+        "w": 1172,
+        "h": 602
     },
     {
         "id": "bc72179531874d62",
@@ -219,22 +488,11 @@
     {
         "id": "2d66c14763805337",
         "type": "ui_group",
-        "name": "1-day Statistics",
+        "name": "Daily Statistics",
         "tab": "aa6de7dd52d2548b",
         "order": 1,
         "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "36a7cc5a3406a57d",
-        "type": "ui_group",
-        "name": "Test",
-        "tab": "aa6de7dd52d2548b",
-        "order": 2,
-        "disp": true,
-        "width": "6",
+        "width": 9,
         "collapse": false,
         "className": ""
     },
@@ -308,9 +566,9 @@
         "hidden": true
     },
     {
-        "id": "637316e70cc0ae71",
+        "id": "e07bcfcea8bc3079",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 2,
@@ -318,9 +576,9 @@
         "height": 1
     },
     {
-        "id": "ae2e27e210a4d6fb",
+        "id": "c31648c90528a650",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 4,
@@ -328,9 +586,9 @@
         "height": 1
     },
     {
-        "id": "df32f271c1b96b83",
+        "id": "e036f23a8eabb5c7",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 6,
@@ -338,9 +596,9 @@
         "height": 1
     },
     {
-        "id": "eea36066cebfae16",
+        "id": "b76033b3b6d1983f",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 7,
@@ -348,9 +606,9 @@
         "height": 1
     },
     {
-        "id": "3c5c1269ce462641",
+        "id": "0e463b366bc77162",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 8,
@@ -358,9 +616,9 @@
         "height": 1
     },
     {
-        "id": "2c3c34ef0bcf1bc5",
+        "id": "669cc6b6703d9543",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 9,
@@ -368,9 +626,9 @@
         "height": 1
     },
     {
-        "id": "620ba0aa613a6966",
+        "id": "dcf3697414c2d648",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 10,
@@ -378,9 +636,9 @@
         "height": 1
     },
     {
-        "id": "c22cc5b846131315",
+        "id": "fbc43ec249738a4a",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 11,
@@ -388,9 +646,9 @@
         "height": 1
     },
     {
-        "id": "bebdc27ebc5fb413",
+        "id": "ed696a737de43439",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 12,
@@ -398,9 +656,9 @@
         "height": 1
     },
     {
-        "id": "60d1552b5cc4868e",
+        "id": "75b74d8bcb9f70a1",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 13,
@@ -408,9 +666,9 @@
         "height": 1
     },
     {
-        "id": "9f9a39b2d85a923f",
+        "id": "554a143179b0f070",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 14,
@@ -418,9 +676,9 @@
         "height": 1
     },
     {
-        "id": "0821b65f01d4f9fe",
+        "id": "a9f5117b949a14be",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 16,
@@ -428,9 +686,9 @@
         "height": 1
     },
     {
-        "id": "dcf39bca6f4c9e41",
+        "id": "9e5df6136e93fd86",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 18,
@@ -438,9 +696,9 @@
         "height": 1
     },
     {
-        "id": "b61a3206496dfbb1",
+        "id": "021d992ca1bad3ef",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 20,
@@ -448,9 +706,9 @@
         "height": 1
     },
     {
-        "id": "001a1a2d69447df4",
+        "id": "747d0cf6cea7ce46",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 21,
@@ -458,9 +716,9 @@
         "height": 1
     },
     {
-        "id": "715b2db92828f81a",
+        "id": "8332d2d6f9fc865c",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 22,
@@ -468,9 +726,9 @@
         "height": 1
     },
     {
-        "id": "4651af9084c43a58",
+        "id": "0f74807a47558d7e",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 23,
@@ -478,9 +736,9 @@
         "height": 1
     },
     {
-        "id": "3b8c7b630195e91a",
+        "id": "0bdcb33a39232591",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 24,
@@ -488,9 +746,9 @@
         "height": 1
     },
     {
-        "id": "0ee5cc1f4ea90732",
+        "id": "0b98a00a3677f797",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 25,
@@ -498,9 +756,9 @@
         "height": 1
     },
     {
-        "id": "afd8409276210c5b",
+        "id": "5ab8f1b7a33edbae",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 26,
@@ -508,9 +766,9 @@
         "height": 1
     },
     {
-        "id": "48d435494858708e",
+        "id": "e56303e8fe07bd02",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 27,
@@ -518,9 +776,9 @@
         "height": 1
     },
     {
-        "id": "3af4b783a512e48e",
+        "id": "efa2003c5d067ba3",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 28,
@@ -528,9 +786,9 @@
         "height": 1
     },
     {
-        "id": "bee929f779157bba",
+        "id": "4f67d51e573cb968",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 29,
@@ -538,9 +796,9 @@
         "height": 1
     },
     {
-        "id": "00d2d8f8abb5856b",
+        "id": "6c5544a1ce7bf593",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 31,
@@ -548,9 +806,9 @@
         "height": 1
     },
     {
-        "id": "4a04e3ff6dabfca8",
+        "id": "75565c0c1b08aa86",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 32,
@@ -558,9 +816,9 @@
         "height": 1
     },
     {
-        "id": "1bd92616875ac273",
+        "id": "208744401d699e5f",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 33,
@@ -568,9 +826,9 @@
         "height": 1
     },
     {
-        "id": "845742811fe35527",
+        "id": "baed955da95a55cd",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 34,
@@ -578,9 +836,9 @@
         "height": 1
     },
     {
-        "id": "0652c3c9214e4985",
+        "id": "9484cac9a911abc2",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 35,
@@ -588,9 +846,9 @@
         "height": 1
     },
     {
-        "id": "4159284a3ff9b317",
+        "id": "7f5543a2759250bb",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 36,
@@ -598,9 +856,9 @@
         "height": 1
     },
     {
-        "id": "273eda3281f98dd5",
+        "id": "bbe9ce7714f04845",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "4c5c83bbf054b470",
         "order": 37,
@@ -608,9 +866,9 @@
         "height": 1
     },
     {
-        "id": "043c178c3ce1e964",
+        "id": "01c0c33e39583e02",
         "type": "ui_spacer",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
         "name": "spacer",
         "group": "9cfe263e84390285",
         "order": 8,
@@ -618,9 +876,21 @@
         "height": 1
     },
     {
-        "id": "f88f581ac5998475",
+        "id": "f434af1b842eed99",
+        "type": "ui_group",
+        "name": "Weekly Statistics",
+        "tab": "aa6de7dd52d2548b",
+        "order": 3,
+        "disp": true,
+        "width": 9,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2c4dcdc868085b78",
         "type": "ui_form",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "",
         "label": "",
         "group": "885a9f12b26556e0",
@@ -654,19 +924,20 @@
         "topicType": "str",
         "splitLayout": "",
         "className": "",
-        "x": 90,
-        "y": 1340,
+        "x": 110,
+        "y": 1680,
         "wires": [
             [
-                "8280567f9832043e",
-                "517e791c12f1fc59"
+                "22ed6802f714b77e",
+                "1f31f9d5e78e7636"
             ]
         ]
     },
     {
-        "id": "8169b665b118a2de",
+        "id": "f76e01fdb2e63566",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "Initialization",
         "func": "flow.set(\"amount\", 100)\nflow.set(\"plate_remain\", 0)\nflow.set(\"container_remain_percentage\", 0)\n\n// Flags for ifttt notification\nflow.set(\"noti_50\", true)\nflow.set(\"noti_20\", true)\nflow.set(\"noti_0\", true)\n\nmsg.payload = {\n    \"tabs\": {\n        \"show\": [\"Login\", \"Register\"]\n    },\n    \"tab\": \"Login\"\n}\nreturn msg;",
         "outputs": 1,
@@ -675,18 +946,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 570,
-        "y": 1220,
+        "x": 590,
+        "y": 1560,
         "wires": [
             [
-                "0276ae555c7816ef"
+                "02df54cd56f04f5b"
             ]
         ]
     },
     {
-        "id": "8395a0e079c6dac7",
+        "id": "61eb2bb9548da506",
         "type": "inject",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "",
         "props": [
             {
@@ -700,18 +972,19 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 110,
-        "y": 1220,
+        "x": 130,
+        "y": 1560,
         "wires": [
             [
-                "8169b665b118a2de"
+                "f76e01fdb2e63566"
             ]
         ]
     },
     {
-        "id": "d22d0bea717884de",
+        "id": "0ab2311e8ee9db55",
         "type": "ui_gauge",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "6121089994c735e9",
         "name": "",
         "group": "0aaa3500562561ea",
         "order": 1,
@@ -724,45 +997,46 @@
         "min": 0,
         "max": "100",
         "colors": [
-            "#00b500",
+            "#ca3838",
             "#e6e600",
-            "#ca3838"
+            "#00b400"
         ],
         "seg1": "",
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 640,
-        "y": 160,
+        "x": 740,
+        "y": 140,
         "wires": []
     },
     {
-        "id": "dcd52f9e1bef9923",
+        "id": "d0fb4cffb7efe298",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "6121089994c735e9",
         "name": "Get and calculate container",
-        "func": "// msg.payload: Loadcell's value (in gram)\nconst num = parseFloat(msg.payload.toFixed(2))\n// Fixed max weight = 5kg\nconst percentage = parseFloat((num / 5000 * 100).toFixed(2))\n\nmsg.payload = {\n    num: num,\n    percentage: percentage\n}\n\nreturn msg;",
+        "func": "// msg.payload: Loadcell's value (in gram)\nconst num = parseFloat(msg.payload.toFixed(2))\n// Fixed max weight = 700g\nconst percentage = parseFloat((num / 700 * 100).toFixed(2))\n\nmsg.payload = {\n    num: num,\n    percentage: percentage\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
+        "x": 420,
         "y": 160,
         "wires": [
             [
-                "c5ff3f525649c12a",
-                "d22d0bea717884de",
-                "7687c49503fada7b",
-                "81c8e9c1461f85b5"
+                "cb1c4d5ddc084e15",
+                "0ab2311e8ee9db55",
+                "c4c8373322522680"
             ]
         ]
     },
     {
-        "id": "495c9f5fdc23ea97",
+        "id": "7eb374d38b043e77",
         "type": "ui_gauge",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "f2f36c32d53093ef",
         "name": "",
         "group": "2f7ae1d9dbb40962",
         "order": 1,
@@ -775,45 +1049,47 @@
         "min": 0,
         "max": "100",
         "colors": [
-            "#00b500",
+            "#fc3838",
             "#e6e600",
-            "#ca3838"
+            "#00b500"
         ],
         "seg1": "",
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 640,
+        "x": 660,
         "y": 400,
         "wires": []
     },
     {
-        "id": "d22e4e06348ea9eb",
+        "id": "e192f1ff41eac710",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "f2f36c32d53093ef",
         "name": "Get and calculate plate",
-        "func": "// msg.payload = Loadcell's value (in gram)\nconst num = parseFloat(msg.payload.toFixed(2))\n// Fixed max weight = 1kg\nconst percentage = parseFloat((num / 1000 * 100).toFixed(2))\n\nmsg.payload = {\n    num: num,\n    percentage: percentage\n}\n\nreturn msg;",
+        "func": "// msg.payload = Loadcell's value (in gram)\nconst num = parseFloat(msg.payload.toFixed(2))\n// Fixed max weight = 200g\nconst percentage = parseFloat((num / 200 * 100).toFixed(2))\n\nmsg.payload = {\n    num: num,\n    percentage: percentage\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
+        "x": 380,
         "y": 380,
         "wires": [
             [
-                "495c9f5fdc23ea97",
-                "7e221b30495e0e9a",
-                "699a1a8eb52fc03c",
-                "ee4eb3ce66309b54"
+                "7eb374d38b043e77",
+                "3484c0500be9f911",
+                "7faa1b13f7f64518",
+                "47c5f12e4555a9ef"
             ]
         ]
     },
     {
-        "id": "c5ff3f525649c12a",
+        "id": "cb1c4d5ddc084e15",
         "type": "ui_text",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "6121089994c735e9",
         "group": "0aaa3500562561ea",
         "order": 2,
         "width": 0,
@@ -827,14 +1103,15 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 620,
+        "x": 700,
         "y": 100,
         "wires": []
     },
     {
-        "id": "7e221b30495e0e9a",
+        "id": "3484c0500be9f911",
         "type": "ui_text",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "f2f36c32d53093ef",
         "group": "2f7ae1d9dbb40962",
         "order": 2,
         "width": 0,
@@ -848,14 +1125,15 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 600,
+        "x": 620,
         "y": 340,
         "wires": []
     },
     {
-        "id": "6e13e38dc43c982c",
+        "id": "e6fcab6370d6f581",
         "type": "ui_button",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "5fa57a33c8c22a91",
         "name": "",
         "group": "df7f1b0707f0384d",
         "order": 2,
@@ -873,17 +1151,18 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 110,
-        "y": 760,
+        "y": 700,
         "wires": [
             [
-                "b0a9b67963bd14e5"
+                "4e5988f4fa1c4a3c"
             ]
         ]
     },
     {
-        "id": "c98f399bb17e8f02",
+        "id": "d5ceeacb98b12bd7",
         "type": "ui_numeric",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "5fa57a33c8c22a91",
         "name": "",
         "label": "Food amount:",
         "tooltip": "",
@@ -896,22 +1175,23 @@
         "topic": "topic",
         "topicType": "msg",
         "format": "{{value}} g",
-        "min": "100",
-        "max": "1000",
-        "step": "100",
+        "min": "50",
+        "max": "700",
+        "step": "50",
         "className": "",
         "x": 120,
-        "y": 700,
+        "y": 640,
         "wires": [
             [
-                "b2569f4701ca23b2"
+                "ab3e266a8a0aab9a"
             ]
         ]
     },
     {
-        "id": "b2569f4701ca23b2",
+        "id": "ab3e266a8a0aab9a",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "5fa57a33c8c22a91",
         "name": "function 5",
         "func": "flow.set(\"amount\", msg.payload)\nreturn msg;",
         "outputs": 1,
@@ -920,16 +1200,17 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 700,
+        "x": 280,
+        "y": 640,
         "wires": [
             []
         ]
     },
     {
-        "id": "b0a9b67963bd14e5",
+        "id": "4e5988f4fa1c4a3c",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "5fa57a33c8c22a91",
         "name": "function 6",
         "func": "const container_remain = flow.get(\"container_remain\")\nconst plate_remain = flow.get(\"plate_remain\")\nconst amount_to_feed = flow.get(\"amount\")\n\nif(container_remain < amount_to_feed){\n    msg.payload = {\n        failure: \"Your food container doesn't have enough food!\"\n    }\n}\nelse if(1000 - plate_remain < amount_to_feed){\n    msg.payload = {\n        failure: \"Your plate can't hold that much food!\"\n    }\n}\nelse{\n    msg.payload = {\n        success: \"Preparing to feed your pet!\"\n    }\n}\nreturn msg;",
         "outputs": 1,
@@ -939,17 +1220,18 @@
         "finalize": "",
         "libs": [],
         "x": 280,
-        "y": 760,
+        "y": 700,
         "wires": [
             [
-                "d913b739e05a0f01"
+                "d4c1d8f4f5bfd649"
             ]
         ]
     },
     {
-        "id": "d9a11770263a5b8f",
+        "id": "e22ef872c5258e82",
         "type": "ui_toast",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "5fa57a33c8c22a91",
         "position": "bottom right",
         "displayTime": "3",
         "highlight": "",
@@ -962,13 +1244,14 @@
         "topic": "",
         "name": "Success notification",
         "x": 780,
-        "y": 800,
+        "y": 720,
         "wires": []
     },
     {
-        "id": "d913b739e05a0f01",
+        "id": "d4c1d8f4f5bfd649",
         "type": "switch",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "5fa57a33c8c22a91",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -987,21 +1270,22 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 430,
-        "y": 760,
+        "x": 410,
+        "y": 700,
         "wires": [
             [
-                "d90b67f3a78daa43"
+                "d4bf301d90ffb42f"
             ],
             [
-                "aea7fc9cd9582cc2"
+                "80f586ee6bdeb337"
             ]
         ]
     },
     {
-        "id": "aea7fc9cd9582cc2",
+        "id": "80f586ee6bdeb337",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "5fa57a33c8c22a91",
         "name": "function 7",
         "func": "const message = msg.payload.success\nmsg.payload = message\n\nreturn msg;",
         "outputs": 1,
@@ -1010,19 +1294,20 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
-        "y": 800,
+        "x": 560,
+        "y": 720,
         "wires": [
             [
-                "d9a11770263a5b8f",
-                "64aae4a760f7434c"
+                "e22ef872c5258e82",
+                "bc4f0b9a66a70aa7"
             ]
         ]
     },
     {
-        "id": "2d7190b6b4495016",
+        "id": "83459e41144e7fec",
         "type": "ui_toast",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "5fa57a33c8c22a91",
         "position": "dialog",
         "displayTime": "3",
         "highlight": "",
@@ -1035,15 +1320,16 @@
         "topic": "",
         "name": "Failure notification",
         "x": 770,
-        "y": 740,
+        "y": 680,
         "wires": [
             []
         ]
     },
     {
-        "id": "d90b67f3a78daa43",
+        "id": "d4bf301d90ffb42f",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "5fa57a33c8c22a91",
         "name": "function 8",
         "func": "const message = msg.payload.failure\nmsg.payload = message\n\nreturn msg;",
         "outputs": 1,
@@ -1052,18 +1338,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
-        "y": 740,
+        "x": 560,
+        "y": 680,
         "wires": [
             [
-                "2d7190b6b4495016"
+                "83459e41144e7fec"
             ]
         ]
     },
     {
-        "id": "7b29ab85e7fb169b",
+        "id": "6666e9bdad490c91",
         "type": "ui_text",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
         "group": "2f7ae1d9dbb40962",
         "order": 3,
         "width": 0,
@@ -1077,16 +1364,17 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1850,
-        "y": 400,
+        "x": 930,
+        "y": 1080,
         "wires": []
     },
     {
-        "id": "5bfc67003b294122",
+        "id": "4b54e9dfa4699251",
         "type": "mqtt in",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "6121089994c735e9",
         "name": "",
-        "topic": "/scale/container",
+        "topic": "/PetFeeder/scale/container",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "989a90dfdbfa79d0",
@@ -1094,19 +1382,20 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 120,
+        "x": 150,
         "y": 160,
         "wires": [
             [
-                "dcd52f9e1bef9923",
-                "8ea0fb3c9a9b5dea"
+                "d0fb4cffb7efe298",
+                "7714559d5a0fdae4"
             ]
         ]
     },
     {
-        "id": "8ea0fb3c9a9b5dea",
+        "id": "7714559d5a0fdae4",
         "type": "debug",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "6121089994c735e9",
         "name": "debug 1",
         "active": true,
         "tosidebar": true,
@@ -1115,16 +1404,17 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 300,
-        "y": 220,
+        "x": 360,
+        "y": 200,
         "wires": []
     },
     {
-        "id": "95ca86d510117746",
+        "id": "b6fb1aa0f1bcbcbf",
         "type": "mqtt out",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "5fa57a33c8c22a91",
         "name": "",
-        "topic": "/servo",
+        "topic": "/PetFeeder/feed",
         "qos": "2",
         "retain": "",
         "respTopic": "",
@@ -1133,14 +1423,15 @@
         "correl": "",
         "expiry": "",
         "broker": "989a90dfdbfa79d0",
-        "x": 890,
-        "y": 860,
+        "x": 920,
+        "y": 760,
         "wires": []
     },
     {
-        "id": "64aae4a760f7434c",
+        "id": "bc4f0b9a66a70aa7",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "5fa57a33c8c22a91",
         "name": "function 9",
         "func": "msg.payload = flow.get(\"amount\")\n\nreturn msg;",
         "outputs": 1,
@@ -1150,19 +1441,20 @@
         "finalize": "",
         "libs": [],
         "x": 740,
-        "y": 860,
+        "y": 760,
         "wires": [
             [
-                "95ca86d510117746"
+                "b6fb1aa0f1bcbcbf"
             ]
         ]
     },
     {
-        "id": "f4085065019e016e",
+        "id": "26eaf7f97363dfcf",
         "type": "mqtt in",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "f2f36c32d53093ef",
         "name": "",
-        "topic": "/scale/plate",
+        "topic": "/PetFeeder/scale/plate",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "989a90dfdbfa79d0",
@@ -1170,19 +1462,20 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 110,
+        "x": 140,
         "y": 380,
         "wires": [
             [
-                "d22e4e06348ea9eb",
-                "237adfda58901736"
+                "e192f1ff41eac710",
+                "6a35d814b15cfb0f"
             ]
         ]
     },
     {
-        "id": "237adfda58901736",
+        "id": "6a35d814b15cfb0f",
         "type": "debug",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "f2f36c32d53093ef",
         "name": "debug 2",
         "active": true,
         "tosidebar": true,
@@ -1191,26 +1484,28 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 300,
-        "y": 440,
+        "x": 340,
+        "y": 420,
         "wires": []
     },
     {
-        "id": "0276ae555c7816ef",
+        "id": "02df54cd56f04f5b",
         "type": "ui_ui_control",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "",
         "events": "all",
-        "x": 1060,
-        "y": 1220,
+        "x": 1100,
+        "y": 1560,
         "wires": [
             []
         ]
     },
     {
-        "id": "48a3509801002536",
+        "id": "e339974adb91f8cd",
         "type": "switch",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -1229,22 +1524,23 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 650,
-        "y": 1400,
+        "x": 670,
+        "y": 1740,
         "wires": [
             [
-                "edb804e870cda75d",
-                "a8d2c71182990e26"
+                "2a878a074d5e084d",
+                "9a37cfc59b9e50db"
             ],
             [
-                "82157cbfb0f35f35"
+                "0e72793af18ed8c0"
             ]
         ]
     },
     {
-        "id": "edb804e870cda75d",
+        "id": "2a878a074d5e084d",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "Login success",
         "func": "msg.payload = msg.payload.success\n\nreturn msg;",
         "outputs": 1,
@@ -1253,18 +1549,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 840,
-        "y": 1360,
+        "x": 860,
+        "y": 1700,
         "wires": [
             [
-                "769f2fa6da097d7a"
+                "199c501cae4237e6"
             ]
         ]
     },
     {
-        "id": "82157cbfb0f35f35",
+        "id": "0e72793af18ed8c0",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "Login failure",
         "func": "msg.payload = msg.payload.failure\nreturn msg;",
         "outputs": 1,
@@ -1273,18 +1570,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 830,
-        "y": 1440,
+        "x": 850,
+        "y": 1780,
         "wires": [
             [
-                "769f2fa6da097d7a"
+                "199c501cae4237e6"
             ]
         ]
     },
     {
-        "id": "769f2fa6da097d7a",
+        "id": "199c501cae4237e6",
         "type": "ui_toast",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "position": "bottom right",
         "displayTime": "3",
         "highlight": "",
@@ -1296,138 +1594,85 @@
         "className": "",
         "topic": "Notification",
         "name": "",
-        "x": 1110,
-        "y": 1400,
+        "x": 1130,
+        "y": 1740,
         "wires": []
     },
     {
-        "id": "717b41429cf5cb6e",
-        "type": "inject",
-        "z": "4e33cf5b03df07b7",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 100,
-        "y": 960,
-        "wires": [
-            [
-                "d28c6b7671faf408"
-            ]
-        ]
-    },
-    {
-        "id": "d28c6b7671faf408",
+        "id": "7632bf76a8fb8ea1",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
-        "name": "function 12",
-        "func": "msg.payload = Math.round(Math.random()*100)\nreturn msg;",
+        "z": "8cb57750c270cbc8",
+        "g": "aa387e2f0d42ffcb",
+        "name": "Check percentage for notification",
+        "func": "const old_percentage = flow.get(\"container_remain_percentage\")\n\nconst new_percentage = msg.payload.percentage\n\n// If the amount of food drops\nif(new_percentage < old_percentage){\n    if(new_percentage <= 50){\n        if(flow.get(\"noti_50\") === false){\n            msg.payload = {\n                notif: \"Your food container is below 50%\"\n            }\n            flow.set(\"noti_50\", true)\n        }\n    }\n    if (new_percentage <= 20) {\n        if(flow.get(\"noti_20\") === false){\n            msg.payload = {\n                notif: \"Your food container is below 20%\"\n            }\n            flow.set(\"noti_20\", true)\n        }\n    }\n    if (new_percentage == 0) {\n        if(flow.get(\"noti_0\") === false){\n            msg.payload = {\n                notif: \"Your food container is empty, go back and fill it!!!\"\n            }\n            flow.set(\"noti_0\", true)\n        }\n    }\n}\nelse{\n    if(new_percentage > 0){\n        if(flow.get(\"noti_0\") === true){\n            flow.set(\"noti_0\", false)\n        }\n    }\n    if(new_percentage > 20){\n        if(flow.get(\"noti_20\") === true){\n            flow.set(\"noti_20\", false)\n        }\n    }\n    if(new_percentage > 50){\n        if(flow.get(\"noti_50\") === true){\n            flow.set(\"noti_50\", false)\n        }\n    }\n}\n\nflow.set(\"container_remain_percentage\", new_percentage)\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 270,
-        "y": 960,
+        "x": 1180,
+        "y": 100,
         "wires": [
             [
-                "81613fc758af82ec"
+                "8a4a59a77afd4d7c"
             ]
         ]
     },
     {
-        "id": "81613fc758af82ec",
-        "type": "http request",
-        "z": "4e33cf5b03df07b7",
-        "name": "Send data to Thingspeak",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "https://api.thingspeak.com/update?api_key=XRSGUUMCOGOTT89V&field1={{payload}}",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 490,
-        "y": 960,
+        "id": "8a4a59a77afd4d7c",
+        "type": "switch",
+        "z": "8cb57750c270cbc8",
+        "g": "aa387e2f0d42ffcb",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "hask",
+                "v": "notif",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1390,
+        "y": 100,
         "wires": [
             [
-                "d02859b807e211ac"
+                "b1560d31d3af2865",
+                "3fa582ff1a6d923d"
             ]
         ]
     },
     {
-        "id": "d02859b807e211ac",
+        "id": "b1560d31d3af2865",
         "type": "debug",
-        "z": "4e33cf5b03df07b7",
-        "name": "debug 3",
+        "z": "8cb57750c270cbc8",
+        "g": "aa387e2f0d42ffcb",
+        "name": "debug 4",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
+        "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 700,
-        "y": 960,
+        "x": 1520,
+        "y": 140,
         "wires": []
     },
     {
-        "id": "e711454291b72ee1",
-        "type": "inject",
-        "z": "4e33cf5b03df07b7",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 100,
-        "y": 1020,
-        "wires": [
-            [
-                "fd3b237d3da5d8bc"
-            ]
-        ]
-    },
-    {
-        "id": "fd3b237d3da5d8bc",
+        "id": "dda6c6bf5dc0af38",
         "type": "http request",
-        "z": "4e33cf5b03df07b7",
-        "name": "Get data from Thingspeak",
-        "method": "GET",
+        "z": "8cb57750c270cbc8",
+        "g": "aa387e2f0d42ffcb",
+        "name": "Send notification",
+        "method": "POST",
         "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "https://api.thingspeak.com/channels/2372088/fields/1.json?api_key=KYAW97ZDGX7CCNPF&days=1&timezone=Asia%2FBangkok",
+        "paytoqs": "body",
+        "url": "https://maker.ifttt.com/trigger/food_container/with/key/p2uFc04S-wZa--ullRaUbLBoZWcztXBX7qcMNV5fn__",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -1435,75 +1680,154 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 310,
-        "y": 1020,
+        "x": 1830,
+        "y": 100,
         "wires": [
             [
-                "f38e21b04b9d91d1"
+                "9cbc3664d7245acf"
             ]
         ]
     },
     {
-        "id": "f38e21b04b9d91d1",
-        "type": "json",
-        "z": "4e33cf5b03df07b7",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 510,
-        "y": 1020,
-        "wires": [
-            [
-                "38cd8b1ea7fd2ad6",
-                "c190d8948465e7ef"
-            ]
-        ]
-    },
-    {
-        "id": "6671977241289c68",
-        "type": "comment",
-        "z": "4e33cf5b03df07b7",
-        "name": "",
-        "info": "Dữ liệu theo ngày, tuần, tháng phụ thuộc rất nhiều vào cái query của http request\nXem docs để tìm cách lấy dữ liệu\nhttps://www.mathworks.com/help/thingspeak/readfield.html",
-        "x": 100,
-        "y": 1060,
+        "id": "9cbc3664d7245acf",
+        "type": "debug",
+        "z": "8cb57750c270cbc8",
+        "g": "aa387e2f0d42ffcb",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2000,
+        "y": 100,
         "wires": []
     },
     {
-        "id": "38cd8b1ea7fd2ad6",
+        "id": "3fa582ff1a6d923d",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
-        "name": "function 13",
-        "func": "const entries = msg.payload.feeds\n\nconst data = entries.map((entry) => {\n    return parseFloat(entry.field1)\n})\n\nconst labels = entries.map((entry) => {\n    return entry.created_at.substr(11,8)\n})\n\nmsg.payload = [{\n    \"series\": [\"Amount\"],\n    \"data\": [[...data]],\n    \"labels\": [...labels]\n}]\n\nreturn msg;",
+        "z": "8cb57750c270cbc8",
+        "g": "aa387e2f0d42ffcb",
+        "name": "Parse notif into value1 for IFTTT",
+        "func": "msg.payload = {\n    \"value1\": msg.payload.notif\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
-        "y": 1020,
+        "x": 1590,
+        "y": 100,
         "wires": [
             [
-                "3325a89e7c6f0bcc"
+                "dda6c6bf5dc0af38"
             ]
         ]
     },
     {
-        "id": "3325a89e7c6f0bcc",
-        "type": "ui_chart",
-        "z": "4e33cf5b03df07b7",
+        "id": "c4c8373322522680",
+        "type": "function",
+        "z": "8cb57750c270cbc8",
+        "g": "6121089994c735e9",
+        "name": "Prepare data to push to Thingspeak",
+        "func": "msg.payload = msg.payload.percentage\nmsg.topic = \"field2\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 180,
+        "wires": [
+            [
+                "b7e2a94334a13e0a"
+            ]
+        ]
+    },
+    {
+        "id": "14233061d6d9e0e8",
+        "type": "http request",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
+        "name": "Get data from ThingSpeak",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.thingspeak.com/channels/2372088/feeds.json?api_key=KYAW97ZDGX7CCNPF&days=1&timezone=Asia%2FBangkok",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 360,
+        "y": 980,
+        "wires": [
+            [
+                "c1c1e1b5a34a4b7a"
+            ]
+        ]
+    },
+    {
+        "id": "c1c1e1b5a34a4b7a",
+        "type": "json",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
         "name": "",
-        "group": "36a7cc5a3406a57d",
-        "order": 2,
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 570,
+        "y": 980,
+        "wires": [
+            [
+                "455455352a95613d",
+                "daafaf1b4b4eb69b",
+                "447ebdad0354f801",
+                "45c9f636154cbfe7"
+            ]
+        ]
+    },
+    {
+        "id": "daafaf1b4b4eb69b",
+        "type": "function",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
+        "name": "Parse data",
+        "func": "const entries = msg.payload.feeds\n\nconst data = entries.map((entry) => {\n    return parseFloat(entry.field2)\n})\n\nconst labels = entries.map((entry) => {\n    return entry.created_at.substr(11,8)\n})\n\nmsg.payload = [{\n    \"series\": [\"Amount\"],\n    \"data\": [[...data]],\n    \"labels\": [...labels]\n}]\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 940,
+        "wires": [
+            [
+                "6a77e3cd58af1ba0"
+            ]
+        ]
+    },
+    {
+        "id": "6a77e3cd58af1ba0",
+        "type": "ui_chart",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
+        "name": "",
+        "group": "2d66c14763805337",
+        "order": 1,
         "width": 0,
         "height": 0,
-        "label": "chart",
+        "label": "Food Container",
         "chartType": "line",
         "legend": "false",
         "xformat": "HH:mm:ss",
-        "interpolate": "linear",
+        "interpolate": "monotone",
         "nodata": "",
         "dot": false,
         "ymin": "0",
@@ -1528,332 +1852,17 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 830,
-        "y": 1020,
+        "x": 920,
+        "y": 940,
         "wires": [
             []
         ]
     },
     {
-        "id": "7687c49503fada7b",
+        "id": "7faa1b13f7f64518",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
-        "name": "Check percentage for notification",
-        "func": "const old_percentage = flow.get(\"container_remain_percentage\")\n\nconst new_percentage = msg.payload.percentage\n\n// If the amount of food drops\nif(new_percentage < old_percentage){\n    if(new_percentage <= 50){\n        if(flow.get(\"noti_50\") === false){\n            msg.payload = {\n                notif: \"Your food container is below 50%\"\n            }\n            flow.set(\"noti_50\", true)\n        }\n    }\n    if (new_percentage <= 20) {\n        if(flow.get(\"noti_20\") === false){\n            msg.payload = {\n                notif: \"Your food container is below 20%\"\n            }\n            flow.set(\"noti_20\", true)\n        }\n    }\n    if (new_percentage == 0) {\n        if(flow.get(\"noti_0\") === false){\n            msg.payload = {\n                notif: \"Your food container is empty, go back and fill it!!!\"\n            }\n            flow.set(\"noti_0\", true)\n        }\n    }\n}\nelse{\n    if(new_percentage > 0){\n        if(flow.get(\"noti_0\") === true){\n            flow.set(\"noti_0\", false)\n        }\n    }\n    if(new_percentage > 20){\n        if(flow.get(\"noti_20\") === true){\n            flow.set(\"noti_20\", false)\n        }\n    }\n    if(new_percentage > 50){\n        if(flow.get(\"noti_50\") === true){\n            flow.set(\"noti_50\", false)\n        }\n    }\n}\n\nflow.set(\"container_remain_percentage\", new_percentage)\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 660,
-        "y": 40,
-        "wires": [
-            [
-                "6bbda94cbc0da7c8"
-            ]
-        ]
-    },
-    {
-        "id": "6bbda94cbc0da7c8",
-        "type": "switch",
-        "z": "4e33cf5b03df07b7",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "hask",
-                "v": "notif",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 890,
-        "y": 40,
-        "wires": [
-            [
-                "a6b4eacad1f3eccc",
-                "884f8794932efe34"
-            ]
-        ]
-    },
-    {
-        "id": "a6b4eacad1f3eccc",
-        "type": "debug",
-        "z": "4e33cf5b03df07b7",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1040,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "0c83e3fe65bcf9b4",
-        "type": "http request",
-        "z": "4e33cf5b03df07b7",
-        "name": "Send notification",
-        "method": "POST",
-        "ret": "txt",
-        "paytoqs": "body",
-        "url": "https://maker.ifttt.com/trigger/food_container/with/key/p2uFc04S-wZa--ullRaUbLBoZWcztXBX7qcMNV5fn__",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1370,
-        "y": 40,
-        "wires": [
-            [
-                "a51573641188c93a"
-            ]
-        ]
-    },
-    {
-        "id": "a51573641188c93a",
-        "type": "debug",
-        "z": "4e33cf5b03df07b7",
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1560,
-        "y": 40,
-        "wires": []
-    },
-    {
-        "id": "884f8794932efe34",
-        "type": "function",
-        "z": "4e33cf5b03df07b7",
-        "name": "Parse notif into value1 for IFTTT",
-        "func": "msg.payload = {\n    \"value1\": msg.payload.notif\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1110,
-        "y": 40,
-        "wires": [
-            [
-                "0c83e3fe65bcf9b4"
-            ]
-        ]
-    },
-    {
-        "id": "38d1fcab04597717",
-        "type": "inject",
-        "z": "4e33cf5b03df07b7",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 100,
-        "y": 900,
-        "wires": [
-            [
-                "0e46fcf781dbe7bc"
-            ]
-        ]
-    },
-    {
-        "id": "0e46fcf781dbe7bc",
-        "type": "function",
-        "z": "4e33cf5b03df07b7",
-        "name": "function 14",
-        "func": "msg.payload = {\n    \"test1\": \"abc\",\n    \"test2\": 123,\n    \"test3\": [1, 2, 3]\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 270,
-        "y": 900,
-        "wires": [
-            [
-                "037c6fb42945bd3a"
-            ]
-        ]
-    },
-    {
-        "id": "037c6fb42945bd3a",
-        "type": "mqtt out",
-        "z": "4e33cf5b03df07b7",
-        "name": "",
-        "topic": "/test/meo",
-        "qos": "2",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "989a90dfdbfa79d0",
-        "x": 440,
-        "y": 900,
-        "wires": []
-    },
-    {
-        "id": "81c8e9c1461f85b5",
-        "type": "function",
-        "z": "4e33cf5b03df07b7",
-        "name": "Prepare data to push to Thingspeak",
-        "func": "msg.payload = msg.payload.percentage\nmsg.topic = \"field2\"\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 680,
-        "y": 220,
-        "wires": [
-            [
-                "c21c625339ddd774"
-            ]
-        ]
-    },
-    {
-        "id": "36f3138f904c8071",
-        "type": "http request",
-        "z": "4e33cf5b03df07b7",
-        "name": "Get data from Thingspeak",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "https://api.thingspeak.com/channels/2372088/feeds.json?api_key=KYAW97ZDGX7CCNPF&days=1&timezone=Asia%2FBangkok",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1270,
-        "y": 280,
-        "wires": [
-            [
-                "ec03ddc07cf120f5"
-            ]
-        ]
-    },
-    {
-        "id": "ec03ddc07cf120f5",
-        "type": "json",
-        "z": "4e33cf5b03df07b7",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 1470,
-        "y": 280,
-        "wires": [
-            [
-                "bb9498e45dbe4985",
-                "1a7316d30b5aec39",
-                "3c645cb9011540a0",
-                "89b2e8ecbed2d71a"
-            ]
-        ]
-    },
-    {
-        "id": "1a7316d30b5aec39",
-        "type": "function",
-        "z": "4e33cf5b03df07b7",
-        "name": "Parse data",
-        "func": "const entries = msg.payload.feeds\n\nconst data = entries.map((entry) => {\n    return parseFloat(entry.field2)\n})\n\nconst labels = entries.map((entry) => {\n    return entry.created_at.substr(11,8)\n})\n\nmsg.payload = [{\n    \"series\": [\"Amount\"],\n    \"data\": [[...data]],\n    \"labels\": [...labels]\n}]\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1650,
-        "y": 220,
-        "wires": [
-            [
-                "1ee1fa6c5a491d26"
-            ]
-        ]
-    },
-    {
-        "id": "1ee1fa6c5a491d26",
-        "type": "ui_chart",
-        "z": "4e33cf5b03df07b7",
-        "name": "",
-        "group": "2d66c14763805337",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "label": "Food Container",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "monotone",
-        "nodata": "",
-        "dot": true,
-        "ymin": "0",
-        "ymax": "100",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 1840,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "699a1a8eb52fc03c",
-        "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "f2f36c32d53093ef",
         "name": "Prepare plate's percentage to push to Thingspeak",
         "func": "msg.payload = msg.payload.percentage\nmsg.topic = \"field3\"\nreturn msg;",
         "outputs": 1,
@@ -1862,18 +1871,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 730,
+        "x": 750,
         "y": 460,
         "wires": [
             [
-                "c21c625339ddd774"
+                "b7e2a94334a13e0a"
             ]
         ]
     },
     {
-        "id": "3c645cb9011540a0",
+        "id": "447ebdad0354f801",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
         "name": "Parse data",
         "func": "const entries = msg.payload.feeds\n\nconst data = entries.map((entry) => {\n    return parseFloat(entry.field3)\n})\n\nconst labels = entries.map((entry) => {\n    return entry.created_at.substr(11,8)\n})\n\nmsg.payload = [{\n    \"series\": [\"Amount\"],\n    \"data\": [[...data]],\n    \"labels\": [...labels]\n}]\n\nreturn msg;",
         "outputs": 1,
@@ -1882,18 +1892,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1650,
-        "y": 280,
+        "x": 730,
+        "y": 980,
         "wires": [
             [
-                "ef31e8059bed94c9"
+                "4f5c2f78a8863fb9"
             ]
         ]
     },
     {
-        "id": "ef31e8059bed94c9",
+        "id": "4f5c2f78a8863fb9",
         "type": "ui_chart",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
         "name": "",
         "group": "2d66c14763805337",
         "order": 2,
@@ -1905,7 +1916,7 @@
         "xformat": "HH:mm:ss",
         "interpolate": "monotone",
         "nodata": "",
-        "dot": true,
+        "dot": false,
         "ymin": "0",
         "ymax": "100",
         "removeOlder": 1,
@@ -1928,16 +1939,17 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1830,
-        "y": 280,
+        "x": 910,
+        "y": 980,
         "wires": [
             []
         ]
     },
     {
-        "id": "ee4eb3ce66309b54",
+        "id": "47c5f12e4555a9ef",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "f2f36c32d53093ef",
         "name": "Prepare pet's eaten amount to send to Thingspeak",
         "func": "const old_plate_remain = flow.get(\"plate_remain\")\n\nconst current_plate_remain = msg.payload.num\n\nif(current_plate_remain < old_plate_remain){\n    msg.payload = old_plate_remain - current_plate_remain\n}\nelse{\n    msg.payload = 0\n}\nmsg.topic = \"field4\"\n\nflow.set(\"plate_remain\", current_plate_remain)\n\nreturn msg;",
         "outputs": 1,
@@ -1946,41 +1958,43 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 730,
-        "y": 580,
+        "x": 750,
+        "y": 500,
         "wires": [
             [
-                "c21c625339ddd774"
+                "b7e2a94334a13e0a"
             ]
         ]
     },
     {
-        "id": "89b2e8ecbed2d71a",
+        "id": "45c9f636154cbfe7",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
         "name": "Parse data",
-        "func": "const entries = msg.payload.feeds\n\nconst data = entries.map((entry) => {\n    if (!isNaN(parseFloat(entry.field4))){\n        return parseFloat(entry.field4)\n    }\n    else{\n        return 0\n    }\n})\n\nconst labels = entries.map((entry) => {\n    return entry.created_at.substr(11,8)\n})\n\nmsg.payload = [{\n    \"series\": [\"Amount\"],\n    \"data\": [[...data]],\n    \"labels\": [...labels]\n}]\n\nreturn msg;",
+        "func": "const entries = msg.payload.feeds.filter((entry) => {\n    return entry.field4 !== null\n})\n\nconst data = entries.map((entry) => {\n    return parseFloat(entry.field4)\n})\n\nconst labels = entries.map((entry) => {\n    return entry.created_at.substr(11,8)\n})\n\nmsg.payload = [{\n    \"series\": [\"Amount\"],\n    \"data\": [[...data]],\n    \"labels\": [...labels]\n}]\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1650,
-        "y": 340,
+        "x": 730,
+        "y": 1020,
         "wires": [
             [
-                "51aa8e1b60ce15cc"
+                "a7b590f2d3716f99"
             ]
         ]
     },
     {
-        "id": "51aa8e1b60ce15cc",
+        "id": "a7b590f2d3716f99",
         "type": "ui_chart",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
         "name": "",
         "group": "2d66c14763805337",
-        "order": 2,
+        "order": 3,
         "width": 0,
         "height": 0,
         "label": "Eaten Amount",
@@ -2012,16 +2026,17 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1840,
-        "y": 340,
+        "x": 920,
+        "y": 1020,
         "wires": [
             []
         ]
     },
     {
-        "id": "28f08f9ec96b54c7",
+        "id": "b536e87dd5f6240f",
         "type": "http request",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "e91f5d42b973c39b",
         "name": "Send data to Thingspeak",
         "method": "POST",
         "ret": "txt",
@@ -2034,18 +2049,19 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1410,
-        "y": 460,
+        "x": 1450,
+        "y": 300,
         "wires": [
             [
-                "265859fb699b164c"
+                "015c591152a666b6"
             ]
         ]
     },
     {
-        "id": "265859fb699b164c",
+        "id": "015c591152a666b6",
         "type": "debug",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "e91f5d42b973c39b",
         "name": "debug 7",
         "active": true,
         "tosidebar": true,
@@ -2054,14 +2070,15 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1620,
-        "y": 460,
+        "x": 1660,
+        "y": 300,
         "wires": []
     },
     {
-        "id": "c21c625339ddd774",
+        "id": "b7e2a94334a13e0a",
         "type": "join",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "e91f5d42b973c39b",
         "name": "",
         "mode": "custom",
         "build": "object",
@@ -2078,18 +2095,19 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 1050,
-        "y": 460,
+        "x": 1090,
+        "y": 300,
         "wires": [
             [
-                "8a64ecded4d9bda1"
+                "2b26d5ce8260c705"
             ]
         ]
     },
     {
-        "id": "8a64ecded4d9bda1",
+        "id": "2b26d5ce8260c705",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "e91f5d42b973c39b",
         "name": "Filter",
         "func": "if (msg.payload.field4 === 0){\n    delete msg.payload.field4;\n}\nreturn msg;",
         "outputs": 1,
@@ -2098,19 +2116,20 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1170,
-        "y": 460,
+        "x": 1230,
+        "y": 300,
         "wires": [
             [
-                "9c7a1ab8bc7961da",
-                "28f08f9ec96b54c7"
+                "0eb2fb2797d105d6",
+                "b536e87dd5f6240f"
             ]
         ]
     },
     {
-        "id": "9c7a1ab8bc7961da",
+        "id": "0eb2fb2797d105d6",
         "type": "debug",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "e91f5d42b973c39b",
         "name": "debug 8",
         "active": true,
         "tosidebar": true,
@@ -2119,30 +2138,15 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1360,
-        "y": 520,
+        "x": 1400,
+        "y": 360,
         "wires": []
     },
     {
-        "id": "c190d8948465e7ef",
-        "type": "debug",
-        "z": "4e33cf5b03df07b7",
-        "name": "debug 9",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 620,
-        "y": 1080,
-        "wires": []
-    },
-    {
-        "id": "df0219eb05b01752",
+        "id": "f08ed4c2e54458ae",
         "type": "inject",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
         "name": "",
         "props": [
             {
@@ -2160,35 +2164,38 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1070,
-        "y": 280,
+        "x": 130,
+        "y": 980,
         "wires": [
             [
-                "36f3138f904c8071",
-                "ede85b7053eb2095"
+                "14233061d6d9e0e8",
+                "55d5c6d50d7899d7"
             ]
         ]
     },
     {
-        "id": "bb9498e45dbe4985",
+        "id": "455455352a95613d",
         "type": "debug",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
         "name": "debug 10",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1560,
-        "y": 160,
+        "x": 720,
+        "y": 900,
         "wires": []
     },
     {
-        "id": "8280567f9832043e",
+        "id": "22ed6802f714b77e",
         "type": "firebase-get",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "Search account",
         "constraint": {
             "orderByChild": "username",
@@ -2203,18 +2210,19 @@
         "path": "accounts",
         "pathType": "str",
         "useConstraint": true,
-        "x": 280,
-        "y": 1340,
+        "x": 300,
+        "y": 1680,
         "wires": [
             [
-                "2b444dd87f998fa5"
+                "b105a6a59313121b"
             ]
         ]
     },
     {
-        "id": "2b444dd87f998fa5",
+        "id": "b105a6a59313121b",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "Check for account's existence",
         "func": "const data = msg.payload\n\nif(data === null){\n    msg.payload = \"Wrong account/password\"\n    msg.topic = \"failure\"\n}\n\nfor (const key in data){\n    if(data.hasOwnProperty(key)){\n        msg.payload = data[key].password\n        msg.topic = \"get_password\"\n    }\n}\n\nreturn msg;",
         "outputs": 1,
@@ -2223,18 +2231,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 1400,
+        "x": 370,
+        "y": 1740,
         "wires": [
             [
-                "517e791c12f1fc59"
+                "1f31f9d5e78e7636"
             ]
         ]
     },
     {
-        "id": "517e791c12f1fc59",
+        "id": "1f31f9d5e78e7636",
         "type": "join",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "",
         "mode": "custom",
         "build": "object",
@@ -2251,18 +2260,19 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 290,
-        "y": 1460,
+        "x": 310,
+        "y": 1800,
         "wires": [
             [
-                "9857fe181c80c371"
+                "221a8db54457315c"
             ]
         ]
     },
     {
-        "id": "9857fe181c80c371",
+        "id": "221a8db54457315c",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "Check password",
         "func": "const data = msg.payload\n\nif(data.hasOwnProperty(\"failure\")){\n    msg.payload = {\n        failure: \"Wrong account/password\"\n    }\n}\nelse{\n    if(data.user.password === data.get_password){\n        msg.payload = {\n        success: \"Login completed\"\n        }\n    }\n    else{\n        msg.payload = {\n            failure: \"Wrong account/password\"\n        }\n    }\n}\n\nreturn msg;",
         "outputs": 1,
@@ -2271,18 +2281,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
-        "y": 1460,
+        "x": 490,
+        "y": 1800,
         "wires": [
             [
-                "48a3509801002536"
+                "e339974adb91f8cd"
             ]
         ]
     },
     {
-        "id": "a8d2c71182990e26",
+        "id": "9a37cfc59b9e50db",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "Login complete",
         "func": "msg.payload = {\n    \"tabs\": {\n        \"show\": [\"Home\", \"Statistics\", \"Schedule\",\"Current Schedule\"],\n        \"hide\": [\"Login\", \"Register\"]\n    },\n    \"tab\": \"Home\"\n}\nreturn msg;",
         "outputs": 1,
@@ -2291,18 +2302,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 800,
-        "y": 1300,
+        "x": 820,
+        "y": 1640,
         "wires": [
             [
-                "0276ae555c7816ef"
+                "02df54cd56f04f5b"
             ]
         ]
     },
     {
-        "id": "2e99e5520e56cdf6",
+        "id": "d481518dc60239e1",
         "type": "ui_form",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "",
         "label": "",
         "group": "3e45edafd7d05920",
@@ -2336,33 +2348,35 @@
         "topicType": "str",
         "splitLayout": "",
         "className": "",
-        "x": 90,
-        "y": 1540,
+        "x": 110,
+        "y": 1880,
         "wires": [
             [
-                "59f0231a9d1aea72",
-                "70a2155321f2db59"
+                "e2c967381011d9f7",
+                "2daa4cb49ab20448"
             ]
         ]
     },
     {
-        "id": "22d9530633e40858",
+        "id": "7812155d4f3d8392",
         "type": "firebase-out",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "Add account",
         "database": "72efe316941c7cdb",
         "path": "accounts",
         "pathType": "str",
         "priority": 1,
         "queryType": "push",
-        "x": 910,
-        "y": 1760,
+        "x": 930,
+        "y": 2100,
         "wires": []
     },
     {
-        "id": "59f0231a9d1aea72",
+        "id": "e2c967381011d9f7",
         "type": "firebase-get",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "Search account",
         "constraint": {
             "orderByChild": "username",
@@ -2377,18 +2391,19 @@
         "path": "accounts",
         "pathType": "str",
         "useConstraint": true,
-        "x": 260,
-        "y": 1540,
+        "x": 280,
+        "y": 1880,
         "wires": [
             [
-                "4824b1a9c410ce52"
+                "73cd45ba9fbd12e7"
             ]
         ]
     },
     {
-        "id": "4824b1a9c410ce52",
+        "id": "73cd45ba9fbd12e7",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "Check username duplication",
         "func": "const data = msg.payload;\n\nif(data !== null){\n    msg.payload = \"Account has already existed\"\n    msg.topic = \"failure\"\n}\nelse{\n    msg.payload = \"Successfully created an account\"\n    msg.topic = \"success\"\n}\nreturn msg;",
         "outputs": 1,
@@ -2397,18 +2412,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 500,
-        "y": 1540,
+        "x": 520,
+        "y": 1880,
         "wires": [
             [
-                "70a2155321f2db59"
+                "2daa4cb49ab20448"
             ]
         ]
     },
     {
-        "id": "70a2155321f2db59",
+        "id": "2daa4cb49ab20448",
         "type": "join",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "",
         "mode": "custom",
         "build": "object",
@@ -2425,18 +2441,19 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 290,
-        "y": 1600,
+        "x": 310,
+        "y": 1940,
         "wires": [
             [
-                "c855bbf0c3b77670"
+                "5b5f2713db759aee"
             ]
         ]
     },
     {
-        "id": "c855bbf0c3b77670",
+        "id": "5b5f2713db759aee",
         "type": "switch",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -2455,23 +2472,24 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 530,
-        "y": 1600,
+        "x": 550,
+        "y": 1940,
         "wires": [
             [
-                "11551ac7f14a1acb"
+                "df3f87a51866c91d"
             ],
             [
-                "7e3cdb60716a359e",
-                "dd9197210faeb8bd",
-                "fa1c65ee8428c565"
+                "428f6e140e764550",
+                "bc34547580822004",
+                "cde3d5c964af9ce5"
             ]
         ]
     },
     {
-        "id": "7e3cdb60716a359e",
+        "id": "428f6e140e764550",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "Get input account",
         "func": "msg.payload = msg.payload.user\n\nreturn msg;",
         "outputs": 1,
@@ -2480,18 +2498,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 710,
-        "y": 1760,
+        "x": 730,
+        "y": 2100,
         "wires": [
             [
-                "22d9530633e40858"
+                "7812155d4f3d8392"
             ]
         ]
     },
     {
-        "id": "dd9197210faeb8bd",
+        "id": "bc34547580822004",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "Create account success message",
         "func": "msg.payload = msg.payload.success\n\nreturn msg;",
         "outputs": 1,
@@ -2500,18 +2519,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 800,
-        "y": 1640,
+        "x": 820,
+        "y": 1980,
         "wires": [
             [
-                "769f2fa6da097d7a"
+                "199c501cae4237e6"
             ]
         ]
     },
     {
-        "id": "11551ac7f14a1acb",
+        "id": "df3f87a51866c91d",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "Create account failure message",
         "func": "msg.payload = msg.payload.failure\n\nreturn msg;",
         "outputs": 1,
@@ -2520,18 +2540,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 770,
-        "y": 1580,
+        "x": 790,
+        "y": 1920,
         "wires": [
             [
-                "769f2fa6da097d7a"
+                "199c501cae4237e6"
             ]
         ]
     },
     {
-        "id": "fa1c65ee8428c565",
+        "id": "cde3d5c964af9ce5",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "Navigate to Login",
         "func": "msg.payload = {\n    \"tab\": \"Login\"\n}\n\nreturn msg;",
         "outputs": 1,
@@ -2540,40 +2561,43 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 750,
-        "y": 1700,
+        "x": 770,
+        "y": 2040,
         "wires": [
             [
-                "172028c25264dc5a"
+                "db4f4729c1ef3a91"
             ]
         ]
     },
     {
-        "id": "172028c25264dc5a",
+        "id": "db4f4729c1ef3a91",
         "type": "ui_ui_control",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "",
         "events": "all",
-        "x": 1080,
-        "y": 1700,
+        "x": 1100,
+        "y": 2040,
         "wires": [
             []
         ]
     },
     {
-        "id": "9202be20442468f5",
+        "id": "5b8851eb1f1cbb6a",
         "type": "comment",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
         "name": "",
         "info": "Cứ 30s lấy data 1 lần",
-        "x": 1040,
-        "y": 240,
+        "x": 120,
+        "y": 940,
         "wires": []
     },
     {
-        "id": "506b25f89a3b344f",
+        "id": "2859584a56237ddd",
         "type": "comment",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "6121089994c735e9",
         "name": "",
         "info": "Gửi dữ liệu từ ESP qua đây bằng MQTT nên\ndelay cỡ 15-20s do Thingspeak hàng free\nkhông cho push data nhanh",
         "x": 100,
@@ -2581,9 +2605,10 @@
         "wires": []
     },
     {
-        "id": "ede85b7053eb2095",
+        "id": "55d5c6d50d7899d7",
         "type": "http request",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
         "name": "Get eaten amount in a day",
         "method": "GET",
         "ret": "txt",
@@ -2596,64 +2621,450 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1280,
-        "y": 400,
+        "x": 360,
+        "y": 1080,
         "wires": [
             [
-                "2b18254721c5aedd"
+                "0d9153855cbefa17"
             ]
         ]
     },
     {
-        "id": "2b18254721c5aedd",
+        "id": "0d9153855cbefa17",
         "type": "json",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 1490,
-        "y": 400,
+        "x": 570,
+        "y": 1080,
         "wires": [
             [
-                "499168c72ef87a70"
+                "14b2cf38376f4f1f"
             ]
         ]
     },
     {
-        "id": "499168c72ef87a70",
+        "id": "14b2cf38376f4f1f",
         "type": "function",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
         "name": "Parse data",
-        "func": "const entries = msg.payload.feeds\n\nmsg.payload = entries[entries.length -1].field4\n\nreturn msg;",
+        "func": "const entries = msg.payload.feeds\n\nmsg.payload = parseFloat(entries[entries.length -1].field4).toFixed(2)\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1650,
-        "y": 400,
+        "x": 730,
+        "y": 1080,
         "wires": [
             [
-                "7b29ab85e7fb169b"
+                "6666e9bdad490c91"
             ]
         ]
     },
     {
-        "id": "d22c05803bf54876",
+        "id": "ed507e8142d4bbd5",
         "type": "comment",
-        "z": "4e33cf5b03df07b7",
+        "z": "8cb57750c270cbc8",
+        "g": "649ac7994d2c9754",
         "name": "",
         "info": "Login với Register dùng firebase, không\nhash password",
-        "x": 100,
-        "y": 1280,
+        "x": 120,
+        "y": 1620,
         "wires": []
     },
     {
-        "id": "8149ca277796e094",
+        "id": "3f91e487d7968a3a",
+        "type": "inject",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1220,
+        "wires": [
+            [
+                "3d8dd9b84cfd205d",
+                "a7661709c3721c12"
+            ]
+        ]
+    },
+    {
+        "id": "3d8dd9b84cfd205d",
+        "type": "http request",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
+        "name": "Get eaten amount in a week",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.thingspeak.com/channels/2372088/fields/4.json?api_key=KYAW97ZDGX7CCNPF&days=7&timezone=Asia%2FBangkok&sum=daily",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 360,
+        "y": 1360,
+        "wires": [
+            [
+                "1c16077007266a4e"
+            ]
+        ]
+    },
+    {
+        "id": "1c16077007266a4e",
+        "type": "json",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 570,
+        "y": 1360,
+        "wires": [
+            [
+                "57be545be5ad6674",
+                "a00e3e18af3e9399"
+            ]
+        ]
+    },
+    {
+        "id": "57be545be5ad6674",
+        "type": "debug",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "23069d03f0e68966",
+        "type": "comment",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
+        "name": "",
+        "info": "Cứ 1h lấy data 1 lần",
+        "x": 120,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "a00e3e18af3e9399",
+        "type": "function",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
+        "name": "Parse data",
+        "func": "const entries = msg.payload.feeds\n\nconst data = entries.map((entry) => {\n    if (!isNaN(parseFloat(entry.field4))){\n        return parseFloat(entry.field4)\n    }\n    else{\n        return 0\n    }\n})\n\nconst labels = entries.map((entry) => {\n    const day = entry.created_at.substr(8, 2)\n    const month = entry.created_at.substr(5, 2)\n    const year = entry.created_at.substr(0, 4)\n    return `${day}-${month}-${year}`\n})\n\nmsg.payload = [{\n    \"series\": [\"Total amount\"],\n    \"data\": [[...data]],\n    \"labels\": [...labels]\n}]\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 1360,
+        "wires": [
+            [
+                "7f0fcee1ac394ee1"
+            ]
+        ]
+    },
+    {
+        "id": "7f0fcee1ac394ee1",
+        "type": "ui_chart",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
+        "name": "",
+        "group": "f434af1b842eed99",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Eaten Amount",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "monotone",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": true,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 920,
+        "y": 1360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a7661709c3721c12",
+        "type": "http request",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
+        "name": "Get 7-day data from ThingSpeak",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.thingspeak.com/channels/2372088/feeds.json?api_key=KYAW97ZDGX7CCNPF&days=7&timezone=Asia%2FBangkok&timescale=10",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 1220,
+        "wires": [
+            [
+                "04d7cbf598a02aad"
+            ]
+        ]
+    },
+    {
+        "id": "04d7cbf598a02aad",
+        "type": "json",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 570,
+        "y": 1220,
+        "wires": [
+            [
+                "dde3b3ea5cbdd9c9"
+            ]
+        ]
+    },
+    {
+        "id": "9a76d01205eba4ef",
+        "type": "debug",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "dde3b3ea5cbdd9c9",
+        "type": "function",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
+        "name": "Filter data",
+        "func": "const data = msg.payload.feeds\n\nmsg.payload = data.filter((entry) => {\n    return (entry.field2 !== null && entry.field3 !== null)\n})\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 1220,
+        "wires": [
+            [
+                "9a76d01205eba4ef",
+                "efb9737f417a240a",
+                "c312e3dc1586f626"
+            ]
+        ]
+    },
+    {
+        "id": "efb9737f417a240a",
+        "type": "function",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
+        "name": "Parse data",
+        "func": "const entries = msg.payload\n\nconst data = entries.map((entry) => {\n    return parseFloat(entry.field2)\n})\n\nconst labels = entries.map((entry) => {\n    const day = entry.created_at.substr(8, 2)\n    const month = entry.created_at.substr(5, 2)\n    const time = entry.created_at.substr(11, 5)\n    return `${day}-${month} ${time}`\n})\n\nmsg.payload = [{\n    \"series\": [\"Amount\"],\n    \"data\": [[...data]],\n    \"labels\": [...labels]\n}]\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 1220,
+        "wires": [
+            [
+                "22d47acdf3a47b3c"
+            ]
+        ]
+    },
+    {
+        "id": "22d47acdf3a47b3c",
+        "type": "ui_chart",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
+        "name": "",
+        "group": "f434af1b842eed99",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Food Container",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "monotone",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1080,
+        "y": 1220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c312e3dc1586f626",
+        "type": "function",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
+        "name": "Parse data",
+        "func": "const entries = msg.payload\n\nconst data = entries.map((entry) => {\n    return parseFloat(entry.field3)\n})\n\nconst labels = entries.map((entry) => {\n    const day = entry.created_at.substr(8, 2)\n    const month = entry.created_at.substr(5, 2)\n    const time = entry.created_at.substr(11, 5)\n    return `${day}-${month} ${time}`\n})\n\nmsg.payload = [{\n    \"series\": [\"Amount\"],\n    \"data\": [[...data]],\n    \"labels\": [...labels]\n}]\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 1280,
+        "wires": [
+            [
+                "ba5e525c52e43859"
+            ]
+        ]
+    },
+    {
+        "id": "ba5e525c52e43859",
+        "type": "ui_chart",
+        "z": "8cb57750c270cbc8",
+        "g": "32b9074e20077c31",
+        "name": "",
+        "group": "f434af1b842eed99",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Food Plate",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "monotone",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1070,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d1c19663685c132c",
         "type": "ui_form",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "b7d59f86b2ee88cc",
         "name": "",
         "label": "Monday",
         "group": "9cfe263e84390285",
@@ -2723,14 +3134,15 @@
         "y": 100,
         "wires": [
             [
-                "31e65e57f289e979"
+                "19860ffcae497985"
             ]
         ]
     },
     {
-        "id": "b1f196ebe376ee79",
+        "id": "b3f64b71beadf503",
         "type": "ui_form",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "b7d59f86b2ee88cc",
         "name": "",
         "label": "Tuesday",
         "group": "9cfe263e84390285",
@@ -2800,14 +3212,15 @@
         "y": 140,
         "wires": [
             [
-                "502b93f466bfbd46"
+                "4706b12e596afbb6"
             ]
         ]
     },
     {
-        "id": "502b93f466bfbd46",
+        "id": "4706b12e596afbb6",
         "type": "function",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "b7d59f86b2ee88cc",
         "name": "parse data",
         "func": "const day = \"Tue\"\nconst time = []\nconst quantity = []\nfor (let i = 1; i <= 3; i++) {\n    const mealKey = `meal_${i}`;\n    const amountKey = `amount_${i}`;\n    const mealValue = msg.payload[mealKey];\n    const amountValue = msg.payload[amountKey];\n\n    if (mealValue !== null && amountValue !== null) {\n        // Parse thời gian để chỉ lấy giờ và phút\n        const parsedTime = new Date(mealValue);\n        const formattedTime = `${parsedTime.getHours()}:${parsedTime.getMinutes()}`;\n        time.push(formattedTime);\n        quantity.push(amountValue);\n    }\n}\nmsg.payload = {\n    day: day,\n    time: time,\n    quantity: quantity\n}\nmsg.topic = \"data\";\nreturn msg;",
         "outputs": 1,
@@ -2820,15 +3233,16 @@
         "y": 140,
         "wires": [
             [
-                "12db5a9385c364f4",
-                "40cc7505f99a28c0"
+                "76fd94264ed5903d",
+                "cd338edfa99dfe11"
             ]
         ]
     },
     {
-        "id": "dfa1a520f5462eec",
+        "id": "513c01d17e405f21",
         "type": "ui_form",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "b7d59f86b2ee88cc",
         "name": "",
         "label": "Wednesday",
         "group": "9cfe263e84390285",
@@ -2898,14 +3312,15 @@
         "y": 180,
         "wires": [
             [
-                "584412aefef6394e"
+                "a519b7a5789e7f8f"
             ]
         ]
     },
     {
-        "id": "584412aefef6394e",
+        "id": "a519b7a5789e7f8f",
         "type": "function",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "b7d59f86b2ee88cc",
         "name": "parse data",
         "func": "const day = \"Wed\"\nconst time = []\nconst quantity = []\nfor (let i = 1; i <= 3; i++) {\n    const mealKey = `meal_${i}`;\n    const amountKey = `amount_${i}`;\n    const mealValue = msg.payload[mealKey];\n    const amountValue = msg.payload[amountKey];\n\n    if (mealValue !== null && amountValue !== null) {\n        // Parse thời gian để chỉ lấy giờ và phút\n        const parsedTime = new Date(mealValue);\n        const formattedTime = `${parsedTime.getHours()}:${parsedTime.getMinutes()}`;\n        time.push(formattedTime);\n        quantity.push(amountValue);\n    }\n}\nmsg.payload = {\n    day: day,\n    time: time,\n    quantity: quantity\n}\nmsg.topic = \"data\";\nreturn msg;",
         "outputs": 1,
@@ -2918,15 +3333,16 @@
         "y": 180,
         "wires": [
             [
-                "40cc7505f99a28c0",
-                "12db5a9385c364f4"
+                "cd338edfa99dfe11",
+                "76fd94264ed5903d"
             ]
         ]
     },
     {
-        "id": "b8241e1f2b449f47",
+        "id": "0e865ee211eb49f6",
         "type": "ui_form",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "b7d59f86b2ee88cc",
         "name": "",
         "label": "Thursday",
         "group": "9cfe263e84390285",
@@ -2996,14 +3412,15 @@
         "y": 220,
         "wires": [
             [
-                "34d590fd13aa66c2"
+                "3a48c50918db5446"
             ]
         ]
     },
     {
-        "id": "34d590fd13aa66c2",
+        "id": "3a48c50918db5446",
         "type": "function",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "b7d59f86b2ee88cc",
         "name": "parse data",
         "func": "const day = \"Thu\"\nconst time = []\nconst quantity = []\nfor (let i = 1; i <= 3; i++) {\n    const mealKey = `meal_${i}`;\n    const amountKey = `amount_${i}`;\n    const mealValue = msg.payload[mealKey];\n    const amountValue = msg.payload[amountKey];\n\n    if (mealValue !== null && amountValue !== null) {\n        // Parse thời gian để chỉ lấy giờ và phút\n        const parsedTime = new Date(mealValue);\n        const formattedTime = `${parsedTime.getHours()}:${parsedTime.getMinutes()}`;\n        time.push(formattedTime);\n        quantity.push(amountValue);\n    }\n}\nmsg.payload = {\n    day: day,\n    time: time,\n    quantity: quantity\n}\nmsg.topic = \"data\";\nreturn msg;",
         "outputs": 1,
@@ -3016,15 +3433,16 @@
         "y": 220,
         "wires": [
             [
-                "40cc7505f99a28c0",
-                "12db5a9385c364f4"
+                "cd338edfa99dfe11",
+                "76fd94264ed5903d"
             ]
         ]
     },
     {
-        "id": "a7e7da37a01019c1",
+        "id": "cf96d6359eaa35bd",
         "type": "ui_form",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "b7d59f86b2ee88cc",
         "name": "",
         "label": "Friday",
         "group": "9cfe263e84390285",
@@ -3094,14 +3512,15 @@
         "y": 260,
         "wires": [
             [
-                "60c102e19a29e3f3"
+                "4cf228a07a8b89da"
             ]
         ]
     },
     {
-        "id": "60c102e19a29e3f3",
+        "id": "4cf228a07a8b89da",
         "type": "function",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "b7d59f86b2ee88cc",
         "name": "parse data",
         "func": "const day = \"Fri\"\nconst time = []\nconst quantity = []\nfor (let i = 1; i <= 3; i++) {\n    const mealKey = `meal_${i}`;\n    const amountKey = `amount_${i}`;\n    const mealValue = msg.payload[mealKey];\n    const amountValue = msg.payload[amountKey];\n\n    if (mealValue !== null && amountValue !== null) {\n        // Parse thời gian để chỉ lấy giờ và phút\n        const parsedTime = new Date(mealValue);\n        const formattedTime = `${parsedTime.getHours()}:${parsedTime.getMinutes()}`;\n        time.push(formattedTime);\n        quantity.push(amountValue);\n    }\n}\nmsg.payload = {\n    day: day,\n    time: time,\n    quantity: quantity\n}\nmsg.topic = \"data\";\nreturn msg;",
         "outputs": 1,
@@ -3114,15 +3533,16 @@
         "y": 260,
         "wires": [
             [
-                "40cc7505f99a28c0",
-                "12db5a9385c364f4"
+                "cd338edfa99dfe11",
+                "76fd94264ed5903d"
             ]
         ]
     },
     {
-        "id": "c6cab5a03c86669e",
+        "id": "d14e5053f9b0b4bb",
         "type": "ui_form",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "b7d59f86b2ee88cc",
         "name": "",
         "label": "Saturday",
         "group": "9cfe263e84390285",
@@ -3192,14 +3612,15 @@
         "y": 300,
         "wires": [
             [
-                "be3d6d7053ec948f"
+                "003b8f21b81dd47e"
             ]
         ]
     },
     {
-        "id": "be3d6d7053ec948f",
+        "id": "003b8f21b81dd47e",
         "type": "function",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "b7d59f86b2ee88cc",
         "name": "parse data",
         "func": "const day = \"Sat\"\nconst time = []\nconst quantity = []\nfor (let i = 1; i <= 3; i++) {\n    const mealKey = `meal_${i}`;\n    const amountKey = `amount_${i}`;\n    const mealValue = msg.payload[mealKey];\n    const amountValue = msg.payload[amountKey];\n\n    if (mealValue !== null && amountValue !== null) {\n        // Parse thời gian để chỉ lấy giờ và phút\n        const parsedTime = new Date(mealValue);\n        const formattedTime = `${parsedTime.getHours()}:${parsedTime.getMinutes()}`;\n        time.push(formattedTime);\n        quantity.push(amountValue);\n    }\n}\nmsg.payload = {\n    day: day,\n    time: time,\n    quantity: quantity\n}\nmsg.topic = \"data\";\nreturn msg;",
         "outputs": 1,
@@ -3212,15 +3633,16 @@
         "y": 300,
         "wires": [
             [
-                "40cc7505f99a28c0",
-                "12db5a9385c364f4"
+                "cd338edfa99dfe11",
+                "76fd94264ed5903d"
             ]
         ]
     },
     {
-        "id": "ae65b6af9e7e53ca",
+        "id": "1c2438192f9b7152",
         "type": "ui_form",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "b7d59f86b2ee88cc",
         "name": "",
         "label": "Sunday",
         "group": "9cfe263e84390285",
@@ -3290,14 +3712,15 @@
         "y": 340,
         "wires": [
             [
-                "0faa0216275e5d22"
+                "00737ebbdb7354cd"
             ]
         ]
     },
     {
-        "id": "0faa0216275e5d22",
+        "id": "00737ebbdb7354cd",
         "type": "function",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "b7d59f86b2ee88cc",
         "name": "parse data",
         "func": "const day = \"Sun\"\nconst time = []\nconst quantity = []\nfor (let i = 1; i <= 3; i++) {\n    const mealKey = `meal_${i}`;\n    const amountKey = `amount_${i}`;\n    const mealValue = msg.payload[mealKey];\n    const amountValue = msg.payload[amountKey];\n\n    if (mealValue !== null && amountValue !== null) {\n        // Parse thời gian để chỉ lấy giờ và phút\n        const parsedTime = new Date(mealValue);\n        const formattedTime = `${parsedTime.getHours()}:${parsedTime.getMinutes()}`;\n        time.push(formattedTime);\n        quantity.push(amountValue);\n    }\n}\nmsg.payload = {\n    day: day,\n    time: time,\n    quantity: quantity\n}\nmsg.topic = \"data\";\nreturn msg;",
         "outputs": 1,
@@ -3310,17 +3733,18 @@
         "y": 340,
         "wires": [
             [
-                "40cc7505f99a28c0",
-                "12db5a9385c364f4"
+                "cd338edfa99dfe11",
+                "76fd94264ed5903d"
             ]
         ]
     },
     {
-        "id": "65fbe3881b6dbd94",
+        "id": "44dc0c6324261b21",
         "type": "function",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "name": "function 15",
-        "func": "var data = msg.payload;\nvar daydata = [];\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Mon\") {\n            currentItem.day = \"Monday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHourMinute = parsedTime ? `${parsedTime[0]}h${parsedTime[1]}` : \"\";\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
+        "func": "var data = msg.payload;\nvar daydata = [];\n\nfunction formatNumber(number) {\n    return number < 10 ? `0${number}` : `${number}`;\n}\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Mon\") {\n            currentItem.day = \"Monday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHour = parsedTime ? formatNumber(parseInt(parsedTime[0])) : \"\";\n                const formattedMinute = parsedTime ? formatNumber(parseInt(parsedTime[1])) : \"\";\n                const formattedHourMinute = `${formattedHour}h${formattedMinute}`;\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3331,14 +3755,15 @@
         "y": 620,
         "wires": [
             [
-                "c80d21f415ac3bb5"
+                "e01e1ba4ab358e48"
             ]
         ]
     },
     {
-        "id": "c80d21f415ac3bb5",
+        "id": "e01e1ba4ab358e48",
         "type": "ui_list",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "group": "4c5c83bbf054b470",
         "name": "Monday",
         "order": 1,
@@ -3354,9 +3779,10 @@
         "wires": []
     },
     {
-        "id": "8deba2c7e3677b52",
+        "id": "5dc59026099f274c",
         "type": "function",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "b7d59f86b2ee88cc",
         "name": "function 17",
         "func": "msg.payload = Object.keys(msg.payload)[0]\nmsg.topic = \"id\"\nreturn msg;",
         "outputs": 1,
@@ -3369,14 +3795,15 @@
         "y": 360,
         "wires": [
             [
-                "12db5a9385c364f4"
+                "76fd94264ed5903d"
             ]
         ]
     },
     {
-        "id": "40cc7505f99a28c0",
+        "id": "cd338edfa99dfe11",
         "type": "firebase-get",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "b7d59f86b2ee88cc",
         "name": "",
         "constraint": {
             "orderByChild": "day",
@@ -3395,14 +3822,15 @@
         "y": 360,
         "wires": [
             [
-                "8deba2c7e3677b52"
+                "5dc59026099f274c"
             ]
         ]
     },
     {
-        "id": "12db5a9385c364f4",
+        "id": "76fd94264ed5903d",
         "type": "join",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "b7d59f86b2ee88cc",
         "name": "",
         "mode": "custom",
         "build": "object",
@@ -3423,14 +3851,15 @@
         "y": 260,
         "wires": [
             [
-                "67786f7d39fa2dc0"
+                "db46a611083ffe2d"
             ]
         ]
     },
     {
-        "id": "67786f7d39fa2dc0",
+        "id": "db46a611083ffe2d",
         "type": "function",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "b7d59f86b2ee88cc",
         "name": "function 18",
         "func": "const path = 'schedule/' + msg.payload.id\n\nmsg.payload = msg.payload.data\nmsg.topic = path\nreturn msg;",
         "outputs": 1,
@@ -3443,14 +3872,15 @@
         "y": 260,
         "wires": [
             [
-                "9d04189635adbb53"
+                "206519fbd154b5d3"
             ]
         ]
     },
     {
-        "id": "9d04189635adbb53",
+        "id": "206519fbd154b5d3",
         "type": "firebase-out",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "b7d59f86b2ee88cc",
         "name": "",
         "database": "72efe316941c7cdb",
         "path": "topic",
@@ -3462,9 +3892,10 @@
         "wires": []
     },
     {
-        "id": "31e65e57f289e979",
+        "id": "19860ffcae497985",
         "type": "function",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "b7d59f86b2ee88cc",
         "name": "parse data",
         "func": "const day = \"Mon\";\nconst time = [];\nconst quantity = [];\n\nfor (let i = 1; i <= 3; i++) {\n    const mealKey = `meal_${i}`;\n    const amountKey = `amount_${i}`;\n\n    const mealValue = msg.payload[mealKey];\n    const amountValue = msg.payload[amountKey];\n\n    if (mealValue !== null && amountValue !== null) {\n        // Parse thời gian để chỉ lấy giờ và phút\n        const parsedTime = new Date(mealValue);\n        const formattedTime = `${parsedTime.getHours()}:${parsedTime.getMinutes()}`;\n        time.push(formattedTime);\n        quantity.push(amountValue);\n    }\n}\n\nmsg.payload = {\n    day: day,\n    time: time,\n    quantity: quantity\n\n};\nmsg.topic = \"data\";\nreturn msg;\n",
         "outputs": 1,
@@ -3477,15 +3908,16 @@
         "y": 100,
         "wires": [
             [
-                "40cc7505f99a28c0",
-                "12db5a9385c364f4"
+                "cd338edfa99dfe11",
+                "76fd94264ed5903d"
             ]
         ]
     },
     {
-        "id": "7b22d54f98efd88c",
+        "id": "0114a70e2aba719e",
         "type": "mqtt out",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "name": "",
         "topic": "/PetFeeder/schedule",
         "qos": "",
@@ -3501,9 +3933,10 @@
         "wires": []
     },
     {
-        "id": "5b97be79c2f2ed18",
+        "id": "ac1e87f2d19cf745",
         "type": "inject",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "name": "",
         "props": [
             {
@@ -3525,14 +3958,15 @@
         "y": 500,
         "wires": [
             [
-                "e2649e18122e28e3"
+                "3a78483fd287a2ef"
             ]
         ]
     },
     {
-        "id": "e2649e18122e28e3",
+        "id": "3a78483fd287a2ef",
         "type": "function",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "name": "Get current date to query",
         "func": "var days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thu', 'Fri', 'Sat'];\n\nvar now = new Date();\nvar day = days[now.getDay()];\nmsg.payload = day;\nreturn msg;",
         "outputs": 1,
@@ -3545,14 +3979,15 @@
         "y": 500,
         "wires": [
             [
-                "59065200758bac5d"
+                "36d9ae9f6df43ffe"
             ]
         ]
     },
     {
-        "id": "59065200758bac5d",
+        "id": "36d9ae9f6df43ffe",
         "type": "firebase-get",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "name": "",
         "constraint": {
             "orderByChild": "day",
@@ -3571,14 +4006,15 @@
         "y": 500,
         "wires": [
             [
-                "74185e9181f57895"
+                "2722d0cf0eecb70c"
             ]
         ]
     },
     {
-        "id": "74185e9181f57895",
+        "id": "2722d0cf0eecb70c",
         "type": "function",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "name": "get schedule of today",
         "func": "const data = msg.payload\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        msg.payload = data[key]\n    }\n}\nreturn msg;",
         "outputs": 1,
@@ -3591,33 +4027,35 @@
         "y": 500,
         "wires": [
             [
-                "7b22d54f98efd88c"
+                "0114a70e2aba719e"
             ]
         ]
     },
     {
-        "id": "8968f1aa4ef08520",
+        "id": "9216c7216f4dbd6b",
         "type": "complete",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "name": "",
         "scope": [
-            "9d04189635adbb53"
+            "206519fbd154b5d3"
         ],
         "uncaught": false,
         "x": 130,
         "y": 560,
         "wires": [
             [
-                "e2649e18122e28e3",
-                "c739aff9dd6b0adc",
-                "a5b9dc7130979d54"
+                "3a78483fd287a2ef",
+                "e43f52cae091f6d2",
+                "61b25ea218b82461"
             ]
         ]
     },
     {
-        "id": "c739aff9dd6b0adc",
+        "id": "e43f52cae091f6d2",
         "type": "firebase-get",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "name": "",
         "constraint": {},
         "database": "72efe316941c7cdb",
@@ -3630,20 +4068,21 @@
         "y": 620,
         "wires": [
             [
-                "65fbe3881b6dbd94",
-                "a64b850e99994bbd",
-                "fc48b5097b74f30d",
-                "b10b302381c31c50",
-                "46a99d4c287d469e",
-                "381bfc0c022c8eb1",
-                "539d8229d79d8bfa"
+                "44dc0c6324261b21",
+                "3316fb2b988f4db7",
+                "7f449d3e2db723d6",
+                "1282fc76da8a7f6c",
+                "12090d0ddb697fd6",
+                "c8f54d5b12df7269",
+                "bb8c3a40094e9c3f"
             ]
         ]
     },
     {
-        "id": "2272f0a4f8c416c6",
+        "id": "6ea659e13ac71ceb",
         "type": "inject",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "name": "",
         "props": [
             {
@@ -3665,16 +4104,17 @@
         "y": 620,
         "wires": [
             [
-                "c739aff9dd6b0adc"
+                "e43f52cae091f6d2"
             ]
         ]
     },
     {
-        "id": "a64b850e99994bbd",
+        "id": "3316fb2b988f4db7",
         "type": "function",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "name": "function 19",
-        "func": "var data = msg.payload;\nvar daydata = [];\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Tue\") {\n            currentItem.day = \"Tuesday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHourMinute = parsedTime ? `${parsedTime[0]}h${parsedTime[1]}` : \"\";\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
+        "func": "var data = msg.payload;\nvar daydata = [];\n\nfunction formatNumber(number) {\n    return number < 10 ? `0${number}` : `${number}`;\n}\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Tue\") {\n            currentItem.day = \"Tuesday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHour = parsedTime ? formatNumber(parseInt(parsedTime[0])) : \"\";\n                const formattedMinute = parsedTime ? formatNumber(parseInt(parsedTime[1])) : \"\";\n                const formattedHourMinute = `${formattedHour}h${formattedMinute}`;\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3685,14 +4125,15 @@
         "y": 660,
         "wires": [
             [
-                "cb08ea257c5e4723"
+                "d0ed56cf44098720"
             ]
         ]
     },
     {
-        "id": "cb08ea257c5e4723",
+        "id": "d0ed56cf44098720",
         "type": "ui_list",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "group": "4c5c83bbf054b470",
         "name": "Tuesday",
         "order": 3,
@@ -3708,11 +4149,12 @@
         "wires": []
     },
     {
-        "id": "fc48b5097b74f30d",
+        "id": "7f449d3e2db723d6",
         "type": "function",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "name": "function 20",
-        "func": "var data = msg.payload;\nvar daydata = [];\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Wed\") {\n            currentItem.day = \"Wednesday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHourMinute = parsedTime ? `${parsedTime[0]}h${parsedTime[1]}` : \"\";\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
+        "func": "var data = msg.payload;\nvar daydata = [];\n\nfunction formatNumber(number) {\n    return number < 10 ? `0${number}` : `${number}`;\n}\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Wed\") {\n            currentItem.day = \"Wednesday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHour = parsedTime ? formatNumber(parseInt(parsedTime[0])) : \"\";\n                const formattedMinute = parsedTime ? formatNumber(parseInt(parsedTime[1])) : \"\";\n                const formattedHourMinute = `${formattedHour}h${formattedMinute}`;\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3723,14 +4165,15 @@
         "y": 700,
         "wires": [
             [
-                "119cdd128365ba3d"
+                "477b0a2d1cf8b8dc"
             ]
         ]
     },
     {
-        "id": "119cdd128365ba3d",
+        "id": "477b0a2d1cf8b8dc",
         "type": "ui_list",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "group": "4c5c83bbf054b470",
         "name": "Wednesday",
         "order": 5,
@@ -3746,11 +4189,12 @@
         "wires": []
     },
     {
-        "id": "b10b302381c31c50",
+        "id": "1282fc76da8a7f6c",
         "type": "function",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "name": "function 21",
-        "func": "var data = msg.payload;\nvar daydata = [];\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Thu\") {\n            currentItem.day = \"Thursday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHourMinute = parsedTime ? `${parsedTime[0]}h${parsedTime[1]}` : \"\";\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
+        "func": "var data = msg.payload;\nvar daydata = [];\n\nfunction formatNumber(number) {\n    return number < 10 ? `0${number}` : `${number}`;\n}\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Thu\") {\n            currentItem.day = \"Thursday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHour = parsedTime ? formatNumber(parseInt(parsedTime[0])) : \"\";\n                const formattedMinute = parsedTime ? formatNumber(parseInt(parsedTime[1])) : \"\";\n                const formattedHourMinute = `${formattedHour}h${formattedMinute}`;\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3761,14 +4205,15 @@
         "y": 740,
         "wires": [
             [
-                "f7f9227e68733cb0"
+                "07330db0f2a9ca2b"
             ]
         ]
     },
     {
-        "id": "f7f9227e68733cb0",
+        "id": "07330db0f2a9ca2b",
         "type": "ui_list",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "group": "4c5c83bbf054b470",
         "name": "Thursday",
         "order": 15,
@@ -3784,11 +4229,12 @@
         "wires": []
     },
     {
-        "id": "46a99d4c287d469e",
+        "id": "12090d0ddb697fd6",
         "type": "function",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "name": "function 22",
-        "func": "var data = msg.payload;\nvar daydata = [];\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Fri\") {\n            currentItem.day = \"Friday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHourMinute = parsedTime ? `${parsedTime[0]}h${parsedTime[1]}` : \"\";\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
+        "func": "var data = msg.payload;\nvar daydata = [];\n\nfunction formatNumber(number) {\n    return number < 10 ? `0${number}` : `${number}`;\n}\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Fri\") {\n            currentItem.day = \"Friday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHour = parsedTime ? formatNumber(parseInt(parsedTime[0])) : \"\";\n                const formattedMinute = parsedTime ? formatNumber(parseInt(parsedTime[1])) : \"\";\n                const formattedHourMinute = `${formattedHour}h${formattedMinute}`;\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3799,14 +4245,15 @@
         "y": 780,
         "wires": [
             [
-                "0286485ceea7cd3d"
+                "7d2f3462eec5b23f"
             ]
         ]
     },
     {
-        "id": "0286485ceea7cd3d",
+        "id": "7d2f3462eec5b23f",
         "type": "ui_list",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "group": "4c5c83bbf054b470",
         "name": "Friday",
         "order": 17,
@@ -3822,11 +4269,12 @@
         "wires": []
     },
     {
-        "id": "381bfc0c022c8eb1",
+        "id": "c8f54d5b12df7269",
         "type": "function",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "name": "function 23",
-        "func": "var data = msg.payload;\nvar daydata = [];\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Sat\") {\n            currentItem.day = \"Saturday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHourMinute = parsedTime ? `${parsedTime[0]}h${parsedTime[1]}` : \"\";\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
+        "func": "var data = msg.payload;\nvar daydata = [];\n\nfunction formatNumber(number) {\n    return number < 10 ? `0${number}` : `${number}`;\n}\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Sat\") {\n            currentItem.day = \"Saturday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHour = parsedTime ? formatNumber(parseInt(parsedTime[0])) : \"\";\n                const formattedMinute = parsedTime ? formatNumber(parseInt(parsedTime[1])) : \"\";\n                const formattedHourMinute = `${formattedHour}h${formattedMinute}`;\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3837,14 +4285,15 @@
         "y": 820,
         "wires": [
             [
-                "c60b1a704fca2ca1"
+                "c3fb45723be792bc"
             ]
         ]
     },
     {
-        "id": "c60b1a704fca2ca1",
+        "id": "c3fb45723be792bc",
         "type": "ui_list",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "group": "4c5c83bbf054b470",
         "name": "Saturday",
         "order": 19,
@@ -3860,11 +4309,12 @@
         "wires": []
     },
     {
-        "id": "539d8229d79d8bfa",
+        "id": "bb8c3a40094e9c3f",
         "type": "function",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "name": "function 24",
-        "func": "var data = msg.payload;\nvar daydata = [];\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Sun\") {\n            currentItem.day = \"Sunday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHourMinute = parsedTime ? `${parsedTime[0]}h${parsedTime[1]}` : \"\";\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
+        "func": "var data = msg.payload;\nvar daydata = [];\n\nfunction formatNumber(number) {\n    return number < 10 ? `0${number}` : `${number}`;\n}\n\nfor (const key in data) {\n    if (data.hasOwnProperty(key)) {\n        var currentItem = data[key];\n        if (currentItem.day === \"Sun\") {\n            currentItem.day = \"Sunday\"\n            const formattedTimes = currentItem.time.map((time, index) => {\n                const quantity = currentItem.quantity[index] || 0;\n\n                // Parse thời gian để chỉ lấy giờ và phút\n                const parsedTime = time ? time.split(\":\") : null;\n                const formattedHour = parsedTime ? formatNumber(parseInt(parsedTime[0])) : \"\";\n                const formattedMinute = parsedTime ? formatNumber(parseInt(parsedTime[1])) : \"\";\n                const formattedHourMinute = `${formattedHour}h${formattedMinute}`;\n\n                return `<div style=\"margin-top: 15px; padding: 15px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 8px; color: #333; font-size: 1.3em;\"><strong>${formattedHourMinute}</strong>: ${quantity}g</div>`;\n            });\n\n            daydata.push({\n                id: key,\n                title: `<span style=\"font-size: 2em; font-weight: bold; color: #333;\">${currentItem.day}</span>`,\n                description: formattedTimes.join(\"\"),\n                quantity: currentItem.quantity || [],\n                time: currentItem.time || []\n            });\n        }\n    }\n}\n\nmsg.payload = daydata;\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3875,14 +4325,15 @@
         "y": 860,
         "wires": [
             [
-                "f548c825ebd6a67c"
+                "0076cbcc91bf9d4f"
             ]
         ]
     },
     {
-        "id": "f548c825ebd6a67c",
+        "id": "0076cbcc91bf9d4f",
         "type": "ui_list",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "group": "4c5c83bbf054b470",
         "name": "Sunday",
         "order": 30,
@@ -3898,9 +4349,10 @@
         "wires": []
     },
     {
-        "id": "504850874bba57bf",
+        "id": "3c32b200476e63e2",
         "type": "ui_toast",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "position": "bottom right",
         "displayTime": "3",
         "highlight": "",
@@ -3917,9 +4369,10 @@
         "wires": []
     },
     {
-        "id": "a5b9dc7130979d54",
+        "id": "61b25ea218b82461",
         "type": "function",
-        "z": "aeec0018a0fd818f",
+        "z": "59541606100e1c83",
+        "g": "3a7e8f5475508b6f",
         "name": "function 25",
         "func": "msg.payload = \"Schedule have been updated!\"\nreturn msg;",
         "outputs": 1,
@@ -3932,7 +4385,7 @@
         "y": 560,
         "wires": [
             [
-                "504850874bba57bf"
+                "3c32b200476e63e2"
             ]
         ]
     }
